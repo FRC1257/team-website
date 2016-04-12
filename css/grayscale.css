@@ -20,9 +20,14 @@
 
 .robotimg{
 	width:100%;
-	height:auto;
+	height: 500px;
 	margin:auto;
 	display:inline-block;
+	box-shadow: 1px  1px 5px  black;
+}
+
+.robotimg[alt="Planck"] { 
+    width: 80%;    
 }
 
 .smallsponsorimg{
@@ -53,6 +58,7 @@
    top: 0; right: 0; bottom: 0; left: 0;
    pointer-events: none;
    z-index: 1;
+   background-attachment: fixed;
 }
 
 .intro.darken:after {
@@ -365,8 +371,8 @@ a:focus {
 
 .intro-logo {
     display: inline-block;
-    width: 40vw;
-    margin: 3em 0 0 0;
+    width: 35vw;
+    margin: 5em 0 0 0;
 }
 
 .intro .intro-body {
@@ -586,4 +592,8 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+.robot-name {
+    padding-top: 1em;
 }
