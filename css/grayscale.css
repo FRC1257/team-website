@@ -46,13 +46,21 @@
     width: 100%;
 }
 
-#robots > .robots-section:after {
+.darken:after {
    content: "";
    position: absolute;
    display: block;
    top: 0; right: 0; bottom: 0; left: 0;
-   background: rgba(0,0,0,0.5);
-  
+   pointer-events: none;
+   z-index: 1;
+}
+
+.intro.darken:after {
+    background: rgba(0,0,0,0.25);
+}
+.robots-section.darken:after {
+    background: rgba(0,0,0,0.5);
+    z-index: auto;
 }
 
 .robot-text {
@@ -352,11 +360,20 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    background-attachment: fixed;
+}
+
+.intro-logo {
+    display: inline-block;
+    width: 40vw;
+    margin: 3em 0 0 0;
 }
 
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
+    position: relative;
+    z-index: 2;
 }
 
 .intro .intro-body .brand-heading {
