@@ -18,6 +18,11 @@
 
 }
 
+.img-first {
+	display: block;
+	width:100%;
+}
+
 .robotimg{
 	width:100%;
 	height: 500px;
