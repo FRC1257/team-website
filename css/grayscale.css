@@ -60,6 +60,18 @@
     width: 100%;
 }
 
+#awards > .awards-section{
+    position: relative;
+    background: url(../img/events/dcmp_2016.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.awards-table {	
+	z-index: 2;
+}
+
 .darken:after {
    content: "";
    position: absolute;
@@ -77,6 +89,12 @@
     background: rgba(0,0,0,0.5);
     z-index: auto;
 }
+
+.awards-section.darken:after {	
+	background: rgba(0,0,0,1);
+}
+
+
 
 .robot-text {
     z-index: 1;
@@ -388,7 +406,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/star_background.jpg) no-repeat bottom center scroll;
+    background: url(../img/star_bg.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -437,7 +455,6 @@ a:focus {
     width: 70px;
     height: 70px;
     margin-top: 15px;
-    
     border: 2px solid #fff;
     border-radius: 100%!important;
     font-size: 40px;
@@ -624,4 +641,19 @@ body {
 
 .robot-name {
     padding-top: 1em;
+}
+
+.team-about {
+	text-align: justify;
+}
+
+.contact-info-table {
+	text-align: right;
+}
+
+.contact-info-table,
+.contact-info-table th,
+.contact-info-table td,
+.contact-info-table tr {
+	border: none !important;
 }
