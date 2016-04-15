@@ -68,7 +68,7 @@
     width: 100%;
 }
 
-.awards-table {	
+.awards-section .container {	
 	z-index: 2;
 }
 
@@ -76,25 +76,28 @@
    content: "";
    position: absolute;
    display: block;
+   width: 100%;
+   height: 100%;
    top: 0; right: 0; bottom: 0; left: 0;
    pointer-events: none;
-   z-index: 1;
+   z-index: auto;
    background-attachment: fixed;
+   background: rgba(0,0,0,0.25);
 }
 
-.intro.darken:after {
-    background: rgba(0,0,0,0.25);
-}
-.robots-section.darken:after {
-    background: rgba(0,0,0,0.5);
-    z-index: auto;
+.awards-section.darken:after {
+	z-index: -1;
+	background: rgba(0,0,0,0.4);
 }
 
-.awards-section.darken:after {	
-	background: rgba(0,0,0,1);
+.awards-section {
+	position: relative;
+	z-index: 0;
 }
 
-
+.awards-title {	
+	margin-top: 1.5em;
+}
 
 .robot-text {
     z-index: 1;
@@ -108,10 +111,21 @@
     margin: 35px 0;
 }
 
+.sponsor-section {
+	margin-bottom: 100px;
+}
+
+.sponsor-section:last-child {
+	margin-bottom: 0;
+}
+
 #about .row {
     position: relative;
 }
 
+.first-section p  {
+	text-align: justify;
+}
 /*Timeline Styling*/
 
 .timeline {
@@ -413,6 +427,7 @@ a:focus {
     background-size: cover;
     -o-background-size: cover;
     background-attachment: fixed;
+	position: relative;
 }
 
 .intro-logo {
@@ -538,6 +553,11 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    position: relative;
+}
+
+.robots-section > .container {
+	z-index: 2;
 }
 
 #map {
@@ -547,14 +567,6 @@ a:focus {
 }
 
 @media(min-width:767px) {
-    .content-section {
-        padding-top: 250px;
-    }
-
-    .download-section {
-        padding: 100px 0;
-    }
-
     #map {
         height: 400px;
         margin-top: 250px;
