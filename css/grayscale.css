@@ -22,11 +22,39 @@
 	background-color:#00000;
 }
 
-.img-first {
-	display: block;
-	width:100%;
+.img-first1,
+.img-first2 {
+	display: inline-block;
+	width:35%;
+	margin: 1em;
 }
 
+.img-first1 {
+	float: left;
+}
+
+.img-first2 {
+	float: right;
+}
+/*
+ * .group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+ * */
+.img-first:before,
+.img-first:after {
+	content: "";
+	display: table;
+}
+
+.img-first:after {
+	clear: both;
+}
 .robotimg{
 	width:100%;
 	height: 500px;
@@ -37,6 +65,11 @@
 
 .robotimg[alt="Planck"] { 
     width: 80%;    
+}
+
+.robotimg[alt="2005 Robot"] {
+	width: 100%;
+	height: auto;
 }
 
 .smallsponsorimg{
