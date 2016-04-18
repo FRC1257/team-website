@@ -87,46 +87,22 @@
 
 #robots > .robots-section {
     position: relative;
-    background: url(../img/blurredDesignLab.jpg);
+    background: linear-gradient(rgba(0,0,0,1) 5%,rgba(0,0,0,0.25), rgba(0,0,0,1) 95%), url(../img/blurredDesignLab.jpg) no-repeat center center scroll;
     background-position: center;
     background-size: cover;
     width: 100%;
+    background-attachment: fixed;
 }
 
 #awards > .awards-section{
     position: relative;
-    background: url(../img/events/dcmp_2016.jpg);
+    background: linear-gradient(rgba(0,0,0,1) 5%,rgba(0,0,0,0.25), rgba(0,0,0,1) 95%), url(../img/events/dcmp_2016.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
 }
 
-.awards-section .container {	
-	z-index: 2;
-}
-
-.darken:after {
-   content: "";
-   position: absolute;
-   display: block;
-   width: 100%;
-   height: 100%;
-   top: 0; right: 0; bottom: 0; left: 0;
-   pointer-events: none;
-   z-index: auto;
-   background-attachment: fixed;
-   background: rgba(0,0,0,0.25);
-}
-
-.awards-section.darken:after {
-	z-index: -1;
-	background: rgba(0,0,0,0.4);
-}
-
-.awards-section {
-	position: relative;
-	z-index: 0;
-}
 
 .awards-title {	
 	margin-top: 1.5em;
@@ -446,14 +422,15 @@ a:focus {
     }
 }
 
+
 .intro {
     display: table;
     width: 100%;
     height: auto;
-    padding: 100px 0;
+    padding-top: 100px;
     text-align: center;
     color: #fff;
-    background: url(../img/star_bg.jpg) no-repeat bottom center scroll;
+    background: linear-gradient(rgba(0,0,0,0.5) 5%,rgba(0,0,0,0.25), rgba(0,0,0,0.85) 95%), url(../img/star_bg.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -481,6 +458,7 @@ a:focus {
 }
 
 .intro .intro-body .intro-text {
+    margin-bottom: 0;
     font-size: 18px;
 }
 
@@ -500,11 +478,12 @@ a:focus {
 }
 
 .btn-circle {
+    position: relative;
     width: 70px;
     height: 70px;
-    margin-top: 15px;
+    margin: 0.25em 0;
     border: 2px solid #fff;
-    border-radius: 100%!important;
+    border-radius: 100% !important;
     font-size: 40px;
     color: #fff;
     background: 0 0;
@@ -520,14 +499,16 @@ a:focus {
     background: rgba(255,255,255,.1);
 }
 
-.btn-circle i.animated {
+.btn-circle .glyphicon-menu-down {
     -webkit-transition-property: -webkit-transform;
     -webkit-transition-duration: 1s;
     -moz-transition-property: -moz-transform;
     -moz-transition-duration: 1s;
+    margin-top: .15em;
+    
 }
 
-.btn-circle:hover i.animated {
+.btn-circle:hover .glyphicon-menu-down {
     -webkit-animation-name: pulse;
     -moz-animation-name: pulse;
     -webkit-animation-duration: 1.5s;
@@ -580,7 +561,7 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background: url(../img/downloads-bg.jpg);
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
