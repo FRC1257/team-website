@@ -673,7 +673,8 @@ body {
 	text-align: justify;
 }
 
-.contact-info-table {
+.contact-info-table,
+.contact-info-table th{
 	text-align: right;
 }
 
@@ -682,4 +683,8 @@ body {
 .contact-info-table td,
 .contact-info-table tr {
 	border: none !important;
+}
+
+.contact-info-table .table-title {
+    font-weight: 800;
 }
