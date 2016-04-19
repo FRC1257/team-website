@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="Team 1257 | Parallel Universe">
 	
-	 <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 
     <title>Team 1257 | Parallel Universe</title>
 
@@ -40,10 +40,11 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <!--<i class="fa fa-play-circle"></i>-->  <span class="light">Team</span> 1257<span class="light"> | Parallel Universe</span>
+                    <!--<i class="fal
+                    fa-play-circle"></i>-->  <span class="light">Team</span> 1257<span class="light"> | Parallel Universe</span>
                 </a>
             </div>
 
@@ -72,9 +73,6 @@
 					<li>
 						<a class="page-scroll" href="#sponsors">Sponsors</a>
 					</li>
-					<li>
-						<a href="www.robotsinheels.com/team1257/blog/">Blog</a>
-					</li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -85,11 +83,11 @@
     <!-- Intro Header -->
     <header class="intro darken">
         <div class="intro-body">
-            <img class="intro-logo image-responsiv" src="./img/snailLogo.svg" alt="Team 1257 Logo">
+            <img class="intro-logo img-responsive" src="./img/snailLogo.svg" alt="Team 1257 Logo">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <p class="intro-text">A FIRST Robotics Team, dedicated to STEM and FRC.<br>Also does other stuff.</p>
+                        <p class="intro-text">A FIRST Robotics Team dedicated to STEM and FRC</p>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <span class=" glyphicon glyphicon-menu-down" aria-hidden="true"></span>
                         </a>
@@ -127,7 +125,7 @@
 								<td>Scotch Plains, NJ 07076-2997</td>
 							</tr>
 							<tr>
-								<td>ParallelUniverse@team1257.org</td>
+								<td><a class="email-link" href="mailto:paralleluniverse@team1257.org">ParallelUniverse@team1257.org</a></td>
 							</tr>
 							<tr>
 								<td>+01-929-500-1257</td>
@@ -173,7 +171,7 @@
 					<div class="timeline-badge-after"><i class="glyphicon glyphicon-check"></i></div>
 						<div class="timeline-panel">
 							<div class="timeline-heading">
-								<h4 class="timeline-title">2008</h4>
+								<h4 class="timeline-title">2009</h4>
 							</div>
 							<div class="timeline-body">
 								<p>Team Reformed</p>
@@ -187,7 +185,7 @@
 								<h4 class="timeline-title">2014 - Winning Clifton</h4>
 							</div>
 							<div class="timeline-body">
-								<p>FIRST Time at MAR Champions</p>
+								<p>FIRST Time at MAR Championship</p>
 							</div>
 						</div>
 				</li>
@@ -198,7 +196,7 @@
 								<h4 class="timeline-title">2015 - North Brunswick</h4>
 							</div>
 							<div class="timeline-body">
-								<p>Winning Team Spirit showed team growth.</p>
+								<p>Winning Team Spirit showed team growth</p>
 							</div>
 						</div>
 				</li>
@@ -225,36 +223,60 @@
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2 robot-text">
                     <h2>Our Robots</h2>
-                    <p>Over the years of FRC, we've build a wealth of robots of varying shapes and sizes.  Take a look below!</p>
-					
-					    <div class="tabbable"> <!-- Only required for left/right tabs -->
-							<ul class="nav nav-tabs">
-								<li class="active"><a href="#robots-weasel" data-toggle="tab">2016</a></li>
-								<li><a href="#robots-planck" data-toggle="tab">2015</a></li>
-								<li><a href="#robots-2005" data-toggle="tab">2005</a></li>
-							</ul>
-							<div class="tab-content">
-								<div class="tab-pane active" id="robots-weasel">
-									<h3 class="robot-name">Electric Weasel</h3>
-									<img class="robotimg" alt="Electric Weasel" title="Electric Weasel" src="./img/robots/electric_weasel.jpg" />
-								</div>
-							<div class="tab-pane" id="robots-planck">
-								<div class="tab-pane active" id="robots-weasel">
-									<h3 class="robot-name">Planck</h3>
-									<img class="robotimg" alt="Planck" title="Planck" src="./img/robots/team_1257_stacking.jpg" />
-								</div>
-							</div>
-							<div class="tab-pane" id="robots-2005">
-								<div class="tab-pane active" id="robots-2005">
-									<h3 class="robot-name">2005 Robot</h3>
-									<img class="robotimg" alt="2005 Robot" title="2005 Robot" src="./img/robots/2005_robot.jpg" />
-								</div>
-							</div>
-						</div>
-					</div>
-					</div>
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause=false>
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					  </ol>
+					 
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner">
+					  <div class="item active">
+					      <img class="robotimg img-responsive" alt="Electric Weasel (2016)" title="Electric Weasel" src="./img/robots/electric_weasel.jpg" />
+					      <div class="carousel-caption">
+					      	<h3>2016</h3>
+					      </div>
+					  </div>
+					  
+					  <div class="item">
+					     <img class="robotimg img-responsive" alt="Planck (2015)" title="Planck" src="./img/robots/team_1257_stacking.jpg" />
+					     <div class="carousel-caption">
+					      <h3>2015</h3>
+					     </div>
+					  </div>
+					  
+					  
+					  <div class="item">
+					     <img class="robotimg img-responsive" alt="Clapping Cymbal Monkey (2014)" title="Clapping Cymbal Monkey" src="./img/robots/DSC_2425.JPG" />
+					     <div class="carousel-caption">
+					      <h3>2014</h3>
+					     </div>
+					  </div>
+					    
+					  <div class="item">
+					     <img class="robotimg img-responsive" alt="2005 Robot" title="2005 Robot" src="./img/robots/2005_robot.jpg" />
+					     <div class="carousel-caption">
+					      <h3>2005</h3>
+					     </div>
+					   </div>
+					    
+					  </div>
+					 
+					  <!-- Controls -->
+					  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left"></span>
+					  </a>
+					  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right"></span>
+					  </a>
+					</div> <!-- Carousel -->
+				</div>
 			</div>
         </div>
+        
     </section>
 	
 	<!-- FIRST Section -->
@@ -300,7 +322,7 @@
       <tr>
 	<td>2016</td>
 	<td>MAR District - Championships</td>
-	<td>Participant</td>
+	<td>Winner</td>
       </tr>
       <tr>
         <td>2016</td>
@@ -310,7 +332,7 @@
       <tr>
         <td>2016</td>
         <td>MAR District - Bridgewater / Raritan Event</td>
-        <td>1st Seed Alliance</td>
+        <td>1st Seed Alliance Captain</td>
       </tr>
       <tr>
         <td>2016</td>
@@ -395,21 +417,48 @@
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Our Sponsors</h2>
+                    
                     <section class="sponsor-section">
-					<h3 class="sponsor-class">Gold</h3>
-					<img class="sponsorimg" alt="UCVTS" src="./img/sponsors/15_16/gold/ucvts.png"/>
-					<img class="sponsorimg" alt="Formlabs" src="./img/sponsors/15_16/gold/Formlabs_Logo_2014-grey_preferred_1.png"/>
-					<img class="sponsorimg" alt="TE Connectivity" src="./img/sponsors/15_16/gold/te_connectivity_logo.png"/>
-					<img class="sponsorimg" alt="Google" src="./img/sponsors/15_16/gold/google.png"/>
+						<h3 class="sponsor-class">Gold</h3>
+						
+						<a target="_blank" href="http://www.ucvts.tec.nj.us/">
+							<img class="sponsorimg" alt="UCVTS" src="./img/sponsors/15_16/gold/ucvts.png"/>
+						</a>
+						<a target="_blank" href="http://formlabs.com/">
+							<img class="sponsorimg" alt="Formlabs" src="./img/sponsors/15_16/gold/Formlabs_Logo_2014-grey_preferred_1.png"/>
+						</a>
+						<a target="_blank" href="http://www.te.com/usa-en/home.html">
+							<img class="sponsorimg" alt="TE Connectivity" src="./img/sponsors/15_16/gold/te_connectivity_logo.png"/>
+						</a>
+						<a target="_blank" href="https://www.google.com/">
+							<img class="sponsorimg" alt="Google" src="./img/sponsors/15_16/gold/google.png"/>
+						</a>
 					</section>
+					
                     <section class="sponsor-section">
-					<h3 class="sponsor-class">Silver</h3>
-					<img class="sponsorimg" alt="RU Makerspace" src="./img/sponsors/15_16/silver/RUMakerspace.png"/>
-					<img class="sponsorimg" alt="The Bike Stand" src="./img/sponsors/15_16/silver/TheBikeStand.png"/>
-					<img class="sponsorimg" alt="Merck" src="./img/sponsors/15_16/silver/200px-Merck_Logo.svg_.png"/>
-					<img class="sponsorimg" alt="Morgan Stanley" src="./img/sponsors/15_16/silver/morgstan.png"/>
-					<img class="sponsorimg" alt="Johnson & Johnson" src="./img/sponsors/15_16/silver/15-Johnson-Johnson-Logo.png"/>
+						<h3 class="sponsor-class">Silver</h3>
+						
+						<a target="_blank" href="https://twitter.com/rumakerspace?lang=en">
+							<img class="sponsorimg" title="RU Makerspace" alt="RU Makerspace" src="./img/sponsors/15_16/silver/RUMakerspace.png"/>
+						</a>
+						<a target="_blank" href="http://www.thebikestand.com/">
+							<img class="sponsorimg" title="The Bike Stand" alt="The Bike Stand" src="./img/sponsors/15_16/silver/TheBikeStand.png"/>
+						</a>
+						<a target="_blank" href="http://www.merck.com/index.html">
+							<img class="sponsorimg" title="Merck & Co." alt="Merck & Co." src="./img/sponsors/15_16/silver/200px-Merck_Logo.svg_.png"/>
+						</a>
+						<a target="_blank" href="http://www.morganstanley.com/">
+							<img class="sponsorimg" title="Morgan Stanley" alt="Morgan Stanley" src="./img/sponsors/15_16/silver/morgstan.png"/>
+						</a>
+						<a target="_blank" href="http://www.jnj.com/">
+							<img class="sponsorimg" title="Johnson & Johnson" alt="Johnson & Johnson" src="./img/sponsors/15_16/silver/15-Johnson-Johnson-Logo.png"/>
+						</a>
+						<a target="_blank" href="http://www.jerseycitypawnshop.com/">
+							<img class="sponsorimg" title="Jersey City Pawn Shop" alt="Jersey City Pawn Shop" src="./img/sponsors/15_16/silver/jerseyCityPawnShop.png"/>
+						</a>
+						
 					</section>
+					
 					<section class="sponsor-section">
 						<h3>Individual Sponsors</h3>
 						<h5>The Kilkullen Family</h5>
@@ -421,6 +470,8 @@
 						<h5>The Paiva Family</h5>
 						<h5>The Shih Family</h5>
 						<h5>The Simon Family</h5>
+						<h5>The Richman Family</h5>
+						<h5>The Lamey Family</h5>
 					</section>
 				</div>
             </div>
@@ -430,7 +481,15 @@
     <footer>
         <div class="container text-center">
             <p>Copyright Team 1257 | Made with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span></p>
+            <div class="social-media-links">
+            	<a target="_blank" href="https://www.facebook.com/FRC1257/"><img src="./img/social-icons/hollow-cut-facebook.png" alt="Team 1257 Facebook" title="Team 1257 Facebook"></a>
+            	<a target="_blank" href="https://twitter.com/frc1257"><img src="./img/social-icons/hollow-cut-twitter.png" alt="Team 1257 Twitter" title="Team 1257 Twitter"></a>
+            	<a target="_blank" href="https://www.youtube.com/channel/UCK6a6LUyBleiUrKwQeNZN_Q"><img src="./img/social-icons/hollow-cut-youtube.png" alt="Team 1257 YouTube" title="Team 1257 YouTube"></a>
+				<a title="paralleluniverse@team1257.org" class="btn btn-circle" target="_blank" href="mailto:paralleluniverse@team1257.org"><span class="glyphicon glyphicon-envelope"></span></a>
+                        
+            </div>
         </div>
+        
     </footer>
 
     <!-- jQuery -->

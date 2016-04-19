@@ -36,8 +36,8 @@
 .img-first2 {
 	float: right;
 }
-/*
- * .group:before,
+
+.group:before,
 .group:after {
     content: "";
     display: table;
@@ -45,7 +45,6 @@
 .group:after {
     clear: both;
 }
- * */
 .img-first:before,
 .img-first:after {
 	content: "";
@@ -55,21 +54,38 @@
 .img-first:after {
 	clear: both;
 }
+
+.carousel {
+    overflow: visible !important;
+}
+
 .robotimg{
-	width:100%;
-	height: 500px;
+    max-width: 100% !important;
+	height: 500px !important;
 	margin:auto;
 	display:inline-block;
 	box-shadow: 1px  1px 5px  black;
 }
 
-.robotimg[alt="Planck"] { 
-    width: 80%;    
+.carousel-control {
+    background: rgba(0,0,0,0) !important;
 }
 
-.robotimg[alt="2005 Robot"] {
-	width: 100%;
-	height: auto;
+.left.carousel-control {
+    left: -15% !important;
+}
+.right.carousel-control {
+   right: -15% !important;
+}
+.carousel-indicators {
+    -webkit-transform: translateY(300%);
+        -ms-transform: translateY(300%);
+            transform: translateY(300%);
+}
+.carousel-caption {
+    -webkit-transform: translateY(-340%);
+        -ms-transform: translateY(-340%);
+            transform: translateY(-340%);
 }
 
 .smallsponsorimg{
@@ -87,6 +103,7 @@
 
 #robots > .robots-section {
     position: relative;
+    background: -webkit-linear-gradient(rgba(0,0,0,1) 5%, rgba(0,0,0,0.25), rgba(0,0,0,1) 95%), url(../img/blurredDesignLab.jpg) no-repeat center center scroll;
     background: linear-gradient(rgba(0,0,0,1) 5%,rgba(0,0,0,0.25), rgba(0,0,0,1) 95%), url(../img/blurredDesignLab.jpg) no-repeat center center scroll;
     background-position: center;
     background-size: cover;
@@ -96,6 +113,7 @@
 
 #awards > .awards-section{
     position: relative;
+    background: -webkit-linear-gradient(rgba(0,0,0,1) 5%, rgba(0,0,0,0.25), rgba(0,0,0,1) 95%), url(../img/events/dcmp_2016.jpg);
     background: linear-gradient(rgba(0,0,0,1) 5%,rgba(0,0,0,0.25), rgba(0,0,0,1) 95%), url(../img/events/dcmp_2016.jpg);
     background-position: center;
     background-size: cover;
@@ -161,7 +179,7 @@
 
 .timeline > li:before,
 .timeline > li:after {
-  content: " ";
+  content: "";
   display: table;
 }
 
@@ -186,7 +204,6 @@
   border-radius: 2px;
   padding: 20px;
   position: relative;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 }
 
@@ -329,7 +346,6 @@ p {
 a {
     color: #42dca3;
     -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
@@ -376,7 +392,6 @@ a:focus {
 
 .navbar-custom .nav li a {
     -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
 }
 
@@ -411,7 +426,6 @@ a:focus {
         letter-spacing: 1px;
         background: 0 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 
@@ -422,18 +436,27 @@ a:focus {
     }
 }
 
+@media (max-width: 1000px) {
+    .navbar-nav {
+        font-size: 0.9em;
+    }
+    .navbar-nav li a{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+}
+
 
 .intro {
     display: table;
     width: 100%;
-    height: auto;
+    height: 100vh;
     padding-top: 100px;
     text-align: center;
     color: #fff;
+    background: -webkit-linear-gradient(rgba(0,0,0,0.5) 5%, rgba(0,0,0,0.25), rgba(0,0,0,0.85) 95%), url(../img/star_bg.jpg) no-repeat bottom center scroll;
     background: linear-gradient(rgba(0,0,0,0.5) 5%,rgba(0,0,0,0.25), rgba(0,0,0,0.85) 95%), url(../img/star_bg.jpg) no-repeat bottom center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     background-attachment: fixed;
@@ -443,7 +466,7 @@ a:focus {
 .intro-logo {
     display: inline-block;
     width: 35vw;
-    margin: 5em 0 0 0;
+    margin: 2em 0 0 0;
 }
 
 .intro .intro-body {
@@ -463,11 +486,6 @@ a:focus {
 }
 
 @media(min-width:768px) {
-    .intro {
-        height: 100%;
-        padding: 0;
-    }
-
     .intro .intro-body .brand-heading {
         font-size: 100px;
     }
@@ -488,7 +506,6 @@ a:focus {
     color: #fff;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
 }
 
@@ -536,23 +553,6 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
-    0% {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-
-    50% {
-        -moz-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-
-    100% {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
 .content-section {
     padding-top: 100px;
 }
@@ -563,8 +563,6 @@ a:focus {
     color: #fff;
     background: url(../img/downloads-bg.jpg);
     background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     position: relative;
@@ -574,18 +572,6 @@ a:focus {
 	z-index: 2;
 }
 
-#map {
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
-}
-
-@media(min-width:767px) {
-    #map {
-        height: 400px;
-        margin-top: 250px;
-    }
-}
 
 .btn {
     border-radius: 0;
@@ -593,7 +579,6 @@ a:focus {
     font-family: PT Sans,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
 
@@ -615,7 +600,7 @@ ul.banner-social-buttons {
     margin-top: 0;
 }
 
-@media(max-width:1199px) {
+@media(max-width:1200px) {
     ul.banner-social-buttons {
         margin-top: 15px;
     }
@@ -632,6 +617,7 @@ ul.banner-social-buttons {
         margin-bottom: 0;
     }
 }
+
 
 footer {
     padding: 50px 0;
@@ -651,6 +637,10 @@ footer p {
     text-shadow: none;
     background: #fcfcfc;
     background: rgba(255,255,255,.2);
+}
+
+img::-moz-selection {
+    background: 0 0;
 }
 
 img::selection {
@@ -686,5 +676,58 @@ body {
 }
 
 .contact-info-table .table-title {
-    font-weight: 800;
+    text-decoration: underline;
+    font-size: large;
+}
+
+.social-media-links {
+    margin-top: 1em;
+}
+
+.social-media-links img{
+    width: 42px;
+    height: 42px;
+    filter:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="1 0" /><feFuncG type="table" tableValues="1 0" /><feFuncB type="table" tableValues="1 0" /></feComponentTransfer></filter></svg>#filter');
+    margin: 0 0.5em;
+    -webkit-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+}
+
+.social-media-links a:hover img,
+.social-media-links img:hover{
+    -webkit-filter: brightness(70%);
+            filter: brightness(70%);
+}
+
+.social-media-links .btn-circle {
+    border: none !important;
+    margin-left: 7px;
+    height: 42px;
+    width: 42px;
+    background: white;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+}
+
+.social-media-links .glyphicon {
+    font-size: 0.6em;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.social-media-links .btn-circle:hover 
+{
+    background: rgba(255,255,255,.7);
+}
+
+.email-link {
+    color: white;
+}
+
+.email-link:hover {
+    color: rgba(255,255,255,0.8);
 }
