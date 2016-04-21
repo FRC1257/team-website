@@ -476,6 +476,15 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
+/* So links that are titles are not teal */
+#title-link {
+    color: #fff;
+}
+
+#title-link:hover {
+    color: #d5d5d5;
+}
+
 @-webkit-keyframes pulse {    
     0% {
         -webkit-transform: scale(1);
