@@ -106,7 +106,7 @@
 #robots > .robots-section {
     position: relative;
     background: -webkit-linear-gradient(rgba(0,0,0,1) 5%, rgba(0,0,0,0.25), rgba(0,0,0,1) 95%), url(../img/blurredDesignLab.jpg) no-repeat center center scroll;
-    background: linear-gradient(rgba(0,0,0,1) 5%,rgba(0,0,0,0.25), rgba(0,0,0,1) 95%), url(../img/blurredDesignLab.jpg) no-repeat center center scroll;
+    background: url(../img/blurredDesignLab.jpg) no-repeat center center scroll;
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -116,7 +116,7 @@
 #awards > .awards-section{
     position: relative;
     background: -webkit-linear-gradient(rgba(0,0,0,1) 5%, rgba(0,0,0,0.25), rgba(0,0,0,1) 95%), url(../img/events/dcmp_2016.jpg);
-    background: linear-gradient(rgba(0,0,0,1) 5%,rgba(0,0,0,0.25), rgba(0,0,0,1) 95%), url(../img/events/dcmp_2016.jpg);
+    background: url(../img/events/dcmp_2016.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -405,7 +405,7 @@ a:focus {
     text-align: center;
     color: #fff;
     background: -webkit-linear-gradient(rgba(0,0,0,0.5) 5%, rgba(0,0,0,0.25), rgba(0,0,0,0.85) 95%), url(../img/star_bg.jpg) no-repeat bottom center scroll;
-    background: linear-gradient(rgba(0,0,0,0.5) 5%,rgba(0,0,0,0.25), rgba(0,0,0,0.85) 95%), url(../img/star_bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/star_bg.jpg) no-repeat bottom center scroll;
     background-size: cover;
     -o-background-size: cover;
     background-attachment: fixed;
