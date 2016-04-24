@@ -183,6 +183,7 @@
  .navbar-custom .navbar-brand {
      font-weight: 700;
      font-size: 18px;
+     -webkit-transition: none;
      transition: none;
  }
 
@@ -252,7 +253,6 @@
      padding-top: 100px;
      text-align: center;
      color: #fff;
-     background: -webkit-linear-gradient(rgba(0,0,0,0.5) 5%, rgba(0,0,0,0.25), rgba(0,0,0,0.85) 95%), url(../img/star_bg.jpg) no-repeat bottom center scroll;
      background: url(../img/star_bg.jpg) no-repeat bottom center scroll;
      background-size: cover;
      -o-background-size: cover;
@@ -508,7 +508,6 @@
 
 #robots > .robots-section {
     position: relative;
-    background: -webkit-linear-gradient(rgba(0,0,0,1) 5%, rgba(0,0,0,0.25), rgba(0,0,0,1) 95%), url(../img/blurredDesignLab.jpg) no-repeat center center scroll;
     background: url(../img/blurredDesignLab.jpg) no-repeat center center scroll;
     background-position: center;
     background-size: cover;
@@ -575,7 +574,6 @@
 
  #awards > .awards-section{
      position: relative;
-     background: -webkit-linear-gradient(rgba(0,0,0,1) 5%, rgba(0,0,0,0.25), rgba(0,0,0,1) 95%), url(../img/events/dcmp_2016.jpg);
      background: url(../img/events/dcmp_2016.jpg);
      background-position: center;
      background-size: cover;
