@@ -818,11 +818,4 @@ footer p {
        font-size: 1em;
        margin-left: -15px;
    }
-   .navbar-custom .navbar-brand {
-      font-size: 14px;
-   }
-   .navbar-nav li a{
-       padding-left: 5px;
-       padding-right: 5px;
-   }
 }
