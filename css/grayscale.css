@@ -638,28 +638,6 @@
     color:  rgba(255,255,255,0.8);
 }
 
-.contribute-link {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#contribute .col-lg-6 {
-    height: 350px;
-    position: relative;
-}
-
-.contribute-link .glyphicon-share {
-    font-size: 16px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
-
 
 /* ========
     Footer
@@ -860,21 +838,4 @@ footer p {
        font-size: 1em;
        margin-left: -15px;
    }
-}
-
-@media only screen and (max-width: 1199px) {
-    .contribute-link {
-        position: relative;
-        left: 0;
-        transform: none;
-        margin: 0.25em 0 1em 0;
-    }
-    
-    #contribute .col-lg-6 {
-        height: auto;
-    }
-    
-    .contribution-description {
-        margin-bottom: 0;
-    }
 }
