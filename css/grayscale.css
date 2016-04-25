@@ -257,7 +257,8 @@
      background-size: cover;
      -o-background-size: cover;
      background-attachment: fixed;
- 	   position: relative;
+ 	 position: relative;
+ 	 overflow: visible;
  }
 
  .intro-logo {
@@ -331,14 +332,12 @@
     padding-bottom: 0;
 }
 
-
 .contact-info-table {
     width: 100%;
     font-size: 14px;
     font-family: 'PT Sans', 'Titillium Web', 'Helvetica Neue', sans-serif;
     text-transform: uppercase;
 }
-
 
 .contact-info-table .table-title {
     font-size: 1.5em;
@@ -630,6 +629,37 @@
 /* ====================
     Contribute Section
    ==================== */
+.contribution-opportunity {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.contribution-opportunity:hover {
+    color:  rgba(255,255,255,0.8);
+}
+
+.contribute-link {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#contribute .col-lg-6 {
+    height: 350px;
+    position: relative;
+}
+
+.contribute-link .glyphicon-share {
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
 
 /* ========
     Footer
@@ -799,7 +829,18 @@ footer p {
        display: inline-block;
        text-align: right;
    }
+   .contact-info-table .icon-above td {
+        padding-bottom: 0;
+        position: relative;
+        right: -100%;
+        transform: translateY(100%);
+    }
+
+    .contact-info-table .icon-above .home-icon {
+        transform: translateY(175%);
+    }
 }
+
 @media only screen and (max-width: 992px) {
   .navbar-custom .navbar-brand {
      font-size: 14px;
@@ -819,4 +860,21 @@ footer p {
        font-size: 1em;
        margin-left: -15px;
    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .contribute-link {
+        position: relative;
+        left: 0;
+        transform: none;
+        margin: 0.25em 0 1em 0;
+    }
+    
+    #contribute .col-lg-6 {
+        height: auto;
+    }
+    
+    .contribution-description {
+        margin-bottom: 0;
+    }
 }
