@@ -780,9 +780,6 @@ footer p {
    .timeline-panel:before {
        display: none !important;
    }
-   .intro {
-     height: auto;
-   }
    .navbar-custom .navbar-brand {
        height:auto;
        padding: 9px 15px;
