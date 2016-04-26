@@ -166,6 +166,16 @@
  .light {
      font-weight: 400;
  }
+ 
+ .group:before,
+ .group:after {
+    content: ""; 
+ 	display: table;
+ }
+
+ .group:after {
+ 	clear: both;
+ }
 
 
 /* ===========
@@ -551,15 +561,6 @@
  .img-first2 {
  	float: right;
  }
- .img-first:before,
- .img-first:after {
- 	content: "";
- 	display: table;
- }
-
- .img-first:after {
- 	clear: both;
- }
 
  first-section p  {
  	text-align: justify;
@@ -625,10 +626,37 @@
 	margin-bottom: 0;
 }
 
+.left-column,
+.mid-column,
+.right-column {
+    text-align: center;
+    padding: 25px;
+}
+
+.left-column {
+    float: left;
+}
+
+.right-column {
+    float: right;
+}
 
 /* ====================
     Contribute Section
    ==================== */
+.contribution-description {
+    text-align: justify;
+}   
+
+.contribution-description {
+    padding-right: 1em;
+}
+
+.contribution-description.last {
+    padding-right: 0;
+    padding-left: 1em;
+}
+
 .contribution-opportunity {
     color: white;
     transition: color 0.3s ease-in-out;
@@ -638,6 +666,21 @@
     color:  rgba(255,255,255,0.8);
 }
 
+.DCMP-team-photo {
+    float: left;
+}
+
+.DOW-thumbnail {
+    float: right;
+}
+
+.DCMP-team-photo,
+.DOW-thumbnail {
+    vertical-align: text-top;
+    width: 50%;
+    margin: 0 0.75em 0.75em 0.75em;
+    border-radius: 3px;
+}
 
 /* ========
     Footer
