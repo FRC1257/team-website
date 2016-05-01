@@ -130,14 +130,14 @@
 
  .group:before,
  .group:after {
-    content: ""; 
+    content: "";
  	display: table;
  }
 
  .group:after {
  	clear: both;
  }
- 
+
 
 /* ============
     Typography
@@ -170,13 +170,12 @@
  a:hover,
  a:focus {
      text-decoration: none;
-     color: #1d9b6c;
  }
 
  .light {
      font-weight: 400;
  }
- 
+
 .content-section p {
 	text-align:justify;
 }
@@ -416,7 +415,7 @@
    position: relative;
    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
  }
- 
+
  .timeline .timeline-panel p {
    text-align: center;
  }
@@ -575,7 +574,7 @@
 	height: 40px;
 	position: relative;
 	padding-right: 15px;
-} 
+}
 
 .first-rainbow .first-link a{
 	font-size: 0.9em;
@@ -627,7 +626,7 @@
      background-attachment: fixed;
      width: 100%;
  }
- 
+
  #awards > .awards-section p {
 	text-align: center;
  }
@@ -655,7 +654,7 @@
 	height: 40px;
 	position: relative;
 	padding-right: 0;
-} 
+}
 
 .first-rainbow .first-link:first-child,
 .first-rainbow .first-link:last-child {
@@ -668,6 +667,10 @@
 	vertical-align: middle;
 	color: white;
 	margin-left: 28.28px;
+}
+
+.first-rainbow .first-link a:hover {
+  color: rgba(255,255,255);
 }
 
 .first-link.css-flljr {
@@ -748,13 +751,17 @@
 }
 
 .sponsor-section .table {
-	
+
 }
 
 
 /* ====================
     Contribute Section
    ==================== */
+.contribute-title {
+  padding-top: 1em;  
+}
+
 .contribution-description {
     padding-right: 1em;
     text-align: justify;
@@ -978,10 +985,10 @@ footer p {
 	  padding-left: 5px;
 	  padding-right: 5px;
 	}
-  
+
 	.first-rainbow .first-link {
 		padding-right: 15px !important;
-	} 
+	}
 
 	.first-rainbow .first-link a{
 		margin-left: 0;
