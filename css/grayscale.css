@@ -128,6 +128,16 @@
      background: 0 0;
  }
 
+ .group:before,
+ .group:after {
+    content: ""; 
+ 	display: table;
+ }
+
+ .group:after {
+ 	clear: both;
+ }
+ 
 
 /* ============
     Typography
@@ -167,16 +177,9 @@
      font-weight: 400;
  }
  
- .group:before,
- .group:after {
-    content: ""; 
- 	display: table;
- }
-
- .group:after {
- 	clear: both;
- }
-
+.content-section p {
+	text-align:justify;
+}
 
 /* ===========
     Navigation
@@ -316,10 +319,6 @@
 /* ===============
     About Section
    =============== */
-.team-about {
-	text-align: justify;
-}
-
 .contact-info-table,
 .contact-info-table tr,
 .contact-info-table td{
@@ -416,6 +415,10 @@
    padding: 20px;
    position: relative;
    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+ }
+ 
+ .timeline .timeline-panel p {
+   text-align: center;
  }
 
  .timeline > li > .timeline-panel:after {
@@ -562,9 +565,53 @@
  	float: right;
  }
 
- first-section p  {
- 	text-align: justify;
- }
+.first-rainbow {
+	margin-top: 40px;
+	overflow-y: hidden;
+	overflow-x: visible;
+}
+
+.first-rainbow . {
+	height: 40px;
+	position: relative;
+	padding-right: 15px;
+} 
+
+.first-rainbow .first-link a{
+	font-size: 0.9em;
+	font-weight: 800;
+	line-height: 40px;
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+	margin-left: 0;
+}
+
+.first-link.css-flljr {
+    background: rgb(6,115,60);
+    z-index: 4;
+}
+
+.first-link.css-fll {
+    background: rgb(233,0,19);
+    z-index: 3;
+}
+
+.first-link.css-ftc {
+    background: rgb(243,105,12);
+    z-index: 2;
+}
+
+.first-link.css-frc {
+    background: rgb(0,136,208);
+    z-index: 1;
+}
+
+.first-rainbow .first-link:after {
+	display: none;
+}
+
+
 /* ================
     Awards Section
    ================ */
@@ -580,6 +627,10 @@
      background-attachment: fixed;
      width: 100%;
  }
+ 
+ #awards > .awards-section p {
+	text-align: center;
+ }
 
  .awards-title {
  	margin-top: 1.5em;
@@ -592,6 +643,71 @@
  #about .row {
      position: relative;
  }
+
+
+.first-rainbow {
+	margin-top: 40px;
+	overflow-y: hidden;
+	overflow-x: visible;
+}
+
+.first-rainbow . {
+	height: 40px;
+	position: relative;
+	padding-right: 0;
+} 
+
+.first-rainbow .first-link:first-child,
+.first-rainbow .first-link:last-child {
+	padding-right: 15px;
+}
+
+.first-rainbow .first-link a{
+	line-height: 40px;
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+	margin-left: 28.28px;
+}
+
+.first-link.css-flljr {
+    background: rgb(6,115,60);
+    z-index: 4;
+}
+
+.first-link.css-fll {
+    background: rgb(233,0,19);
+    z-index: 3;
+}
+
+.first-link.css-ftc {
+    background: rgb(243,105,12);
+    z-index: 2;
+}
+
+.first-link.css-frc {
+    background: rgb(0,136,208);
+    z-index: 1;
+}
+
+	/* Chevrons */
+.first-rainbow .first-link:after {
+	content: "";
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	transform: translate(-50%,-50%) rotate(45deg);
+	background: inherit;
+	border-radius: 3px;
+}
+
+.first-rainbow .first-link:last-child:after {
+	display: none;
+}
+
 
 /* ================
     Sponsor Section
@@ -633,23 +749,13 @@
     padding: 25px;
 }
 
-.left-column {
-    float: left;
-}
-
-.right-column {
-    float: right;
-}
 
 /* ====================
     Contribute Section
    ==================== */
 .contribution-description {
-    text-align: justify;
-}   
-
-.contribution-description {
     padding-right: 1em;
+    text-align: justify;
 }
 
 .contribution-description.last {
@@ -709,7 +815,7 @@ footer p {
             transform: translate(-50%,-50%);
 }
 
-.social-media-links .glyphicon-envelope {
+.social-media-links .glyphicon {
   font-size: 25px;
   color: black;
   position: absolute;
@@ -863,13 +969,26 @@ footer p {
 }
 
 @media only screen and (max-width: 992px) {
-  .navbar-custom .navbar-brand {
-     font-size: 14px;
-  }
-  .navbar-nav li a{
-      padding-left: 5px;
-      padding-right: 5px;
-  }
+	.navbar-custom .navbar-brand {
+	 font-size: 14px;
+	}
+	.navbar-nav li a{
+	  padding-left: 5px;
+	  padding-right: 5px;
+	}
+  
+	.first-rainbow .first-link {
+		padding-right: 15px !important;
+	} 
+
+	.first-rainbow .first-link a{
+		margin-left: 0;
+	}
+
+		/* Chevrons */
+	.first-rainbow .first-link:after {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 1000px) {
