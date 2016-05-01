@@ -670,7 +670,7 @@
 }
 
 .first-rainbow .first-link a:hover {
-  color: rgba(255,255,255);
+  color: rgb(230,230,230);
 }
 
 .first-link.css-flljr {
@@ -750,16 +750,12 @@
 	border: none;
 }
 
-.sponsor-section .table {
-
-}
-
 
 /* ====================
     Contribute Section
    ==================== */
 .contribute-title {
-  padding-top: 1em;  
+  padding-top: 1em;
 }
 
 .contribution-description {
