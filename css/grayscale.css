@@ -564,51 +564,75 @@
  	float: right;
  }
 
-.first-rainbow {
-	margin-top: 40px;
-	overflow-y: hidden;
-	overflow-x: visible;
-}
 
-.first-rainbow . {
-	height: 40px;
-	position: relative;
-	padding-right: 15px;
-}
+ .first-rainbow {
+  display: block;
+  position: static;
+ 	margin-top: 40px;
+ 	overflow-y: hidden;
+ 	overflow-x: visible;
+ }
 
-.first-rainbow .first-link a{
-	font-size: 0.9em;
-	font-weight: 800;
-	line-height: 40px;
-	display: inline-block;
-	vertical-align: middle;
-	color: white;
-	margin-left: 0;
-}
+ .first-rainbow .first-link {
+ 	height: 40px;
+ 	position: relative;
+ 	padding-right: 0;
+ }
 
-.first-link.css-flljr {
-    background: rgb(6,115,60);
-    z-index: 4;
-}
+ .first-rainbow .first-link:first-child,
+ .first-rainbow .first-link:last-child {
+ 	padding-right: 15px;
+ }
 
-.first-link.css-fll {
-    background: rgb(233,0,19);
-    z-index: 3;
-}
+ .first-rainbow .first-link a{
+ 	line-height: 40px;
+ 	display: inline-block;
+ 	vertical-align: middle;
+ 	color: white;
+ 	margin-left: 28.28px;
+ }
 
-.first-link.css-ftc {
-    background: rgb(243,105,12);
-    z-index: 2;
-}
+ .first-rainbow .first-link a:hover {
+   color: rgb(230,230,230);
+ }
 
-.first-link.css-frc {
-    background: rgb(0,136,208);
-    z-index: 1;
-}
+ .first-link.css-flljr {
+     background: rgb(6,115,60);
+     z-index: 4;
+ }
 
-.first-rainbow .first-link:after {
-	display: none;
-}
+ .first-link.css-fll {
+     background: rgb(233,0,19);
+     z-index: 3;
+ }
+
+ .first-link.css-ftc {
+     background: rgb(243,105,12);
+     z-index: 2;
+ }
+
+ .first-link.css-frc {
+     background: rgb(0,136,208);
+     z-index: 1;
+ }
+
+ 	/* Chevrons */
+ .first-rainbow .first-link:after {
+ 	content: "";
+ 	display: block;
+ 	width: 40px;
+ 	height: 40px;
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 100%;
+ 	transform: translate(-50%,-50%) rotate(45deg);
+ 	background: inherit;
+ 	border-radius: 3px;
+ }
+
+ .first-rainbow .first-link:last-child:after {
+ 	display: none;
+ }
 
 
 /* ================
@@ -642,74 +666,6 @@
  #about .row {
      position: relative;
  }
-
-
-.first-rainbow {
-	margin-top: 40px;
-	overflow-y: hidden;
-	overflow-x: visible;
-}
-
-.first-rainbow . {
-	height: 40px;
-	position: relative;
-	padding-right: 0;
-}
-
-.first-rainbow .first-link:first-child,
-.first-rainbow .first-link:last-child {
-	padding-right: 15px;
-}
-
-.first-rainbow .first-link a{
-	line-height: 40px;
-	display: inline-block;
-	vertical-align: middle;
-	color: white;
-	margin-left: 28.28px;
-}
-
-.first-rainbow .first-link a:hover {
-  color: rgb(230,230,230);
-}
-
-.first-link.css-flljr {
-    background: rgb(6,115,60);
-    z-index: 4;
-}
-
-.first-link.css-fll {
-    background: rgb(233,0,19);
-    z-index: 3;
-}
-
-.first-link.css-ftc {
-    background: rgb(243,105,12);
-    z-index: 2;
-}
-
-.first-link.css-frc {
-    background: rgb(0,136,208);
-    z-index: 1;
-}
-
-	/* Chevrons */
-.first-rainbow .first-link:after {
-	content: "";
-	display: block;
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	top: 50%;
-	left: 100%;
-	transform: translate(-50%,-50%) rotate(45deg);
-	background: inherit;
-	border-radius: 3px;
-}
-
-.first-rainbow .first-link:last-child:after {
-	display: none;
-}
 
 
 /* ================
