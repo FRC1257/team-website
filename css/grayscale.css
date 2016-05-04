@@ -350,6 +350,7 @@
 .contact-info-table .table-title {
     font-size: 1.5em;
     font-weight: normal;
+
 }
 
 .email-link {
@@ -625,7 +626,8 @@
  	position: absolute;
  	top: 50%;
  	left: 100%;
- 	transform: translate(-50%,-50%) rotate(45deg);
+ 	-webkit-transform: translate(-50%,-50%) rotate(45deg);
+ 	        transform: translate(-50%,-50%) rotate(45deg);
  	background: inherit;
  	border-radius: 3px;
  }
@@ -726,6 +728,7 @@
 
 .contribution-opportunity {
     color: white;
+    -webkit-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
 }
 
@@ -912,7 +915,10 @@ footer p {
    .contact-info-table td{
    	text-align: right;
    }
-
+   .contact-info-table .table-title {
+     -webkit-transform: translateX(34px);
+             transform: translateX(34px);
+   }
    .contact-info-table .icon-above{
        display: inline-block;
        text-align: right;
@@ -921,11 +927,13 @@ footer p {
         padding-bottom: 0;
         position: relative;
         right: -100%;
-        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%);
     }
 
     .contact-info-table .icon-above .home-icon {
-        transform: translateY(175%);
+        -webkit-transform: translateY(175%);
+                transform: translateY(175%);
     }
 }
 
