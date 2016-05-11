@@ -353,11 +353,11 @@
 
 }
 
-.email-link {
+.contact-info-table a {
     color: white;
 }
 
-.email-link:hover {
+.contact-info-table a:hover {
     color: rgba(255,255,255,0.8);
 }
 
