@@ -755,6 +755,8 @@
 /* ========
     Footer
    ======== */
+   
+
 footer {
    padding: 50px 0;
 }
@@ -768,8 +770,9 @@ footer p {
 }
 
 .social-media-links img{
-    width: 25px;
-    height: 25px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
     -webkit-transition: all 0.2s ease-in-out;
             transition: all 0.2s ease-in-out;
     position: absolute;
@@ -780,7 +783,7 @@ footer p {
 }
 
 .social-media-links .glyphicon {
-  font-size: 25px;
+  font-size: 20px;
   color: black;
   position: absolute;
   top: 50%;
@@ -790,19 +793,23 @@ footer p {
 }
 
 .social-media-links a.btn-circle {
-    border: none !important;
+    border: none;
     height: 42px;
     width: 42px;
     position: relative;
-    background: white !important;
+    background: white;
     -webkit-transition: all 0.2s ease-in-out;
             transition: all 0.2s ease-in-out;
     margin: 0 0.25em;
 }
 .social-media-links .btn-circle:hover {
-    background: rgba(255,255,255,.7) !important;
+    background: rgba(255,255,255,.7);
 }
 
+.social-media-links .blue-alliance-logo {
+    width: 30px;
+    height: 30px;
+}
 
 /* ===============
     Media Queries
@@ -833,6 +840,10 @@ footer p {
     .carousel .robotimg {
        height: 80vw !important;
        max-width: 80vw !important;
+   }
+   
+   .sponsorimg {
+       width: 150px;
    }
 }
 
@@ -874,18 +885,13 @@ footer p {
        text-align: left;
    }
     .carousel .robotimg {
-       height: 80vw !important;
+       height: 80vw;
    }
 
    .social-media-links .btn-circle {
-       width: 35px !important;
-       height: 35px !important;
-       margin: 0 5px !important;
-   }
-
-   .social-media-links .btn-circle img {
-       width: 20px !important;
-       height: 20px !important;
+       width: 35px;
+       height: 35px;
+       margin: 0 5px;
    }
 
    .social-media-links .btn-circle .glyphicon-envelope {
@@ -899,13 +905,19 @@ footer p {
 
    .timeline-panel:after,
    .timeline-panel:before {
-       display: none !important;
+       display: none;
    }
+   
    .navbar-custom .navbar-brand {
        height:auto;
        padding: 9px 15px;
        border: 1px solid transparent;
        margin: 8px 0;
+   }
+   
+   .sponsor-table td{
+       display: block;
+       transform: translateX(100%);
    }
 }
 
