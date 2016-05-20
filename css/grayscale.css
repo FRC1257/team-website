@@ -254,6 +254,10 @@
      padding-right: .5em;
  }
 
+ .navbar .dropdown li a:hover {
+    color: black !important;
+    font-weight: 800;
+ }
 
 /* ==============
     Intro Section
@@ -755,7 +759,7 @@
 /* ========
     Footer
    ======== */
-   
+
 
 footer {
    padding: 50px 0;
@@ -841,7 +845,7 @@ footer p {
        height: 80vw !important;
        max-width: 80vw !important;
    }
-   
+
    .sponsorimg {
        width: 150px;
    }
@@ -907,14 +911,14 @@ footer p {
    .timeline-panel:before {
        display: none;
    }
-   
+
    .navbar-custom .navbar-brand {
        height:auto;
        padding: 9px 15px;
        border: 1px solid transparent;
        margin: 8px 0;
    }
-   
+
    .sponsor-table td{
        display: block;
        transform: translateX(100%);
