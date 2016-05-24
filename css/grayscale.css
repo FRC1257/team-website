@@ -687,7 +687,7 @@
 /* ================
     Sponsor Section
    ================ */
-.sponsorimg{
+.sponsorimg-medium{
    width:22%;
    height:auto;
    margin:auto;
@@ -695,6 +695,26 @@
    margin-bottom:2%;
    margin-left: 0.5em !important;
    margin-right: 0.5em !important;
+}
+
+.sponsorimg-small{
+	width:11%;
+	height:auto;
+	margin:auto;
+	display:inline-block;
+	margin-bottom:2%;
+	margin-left: .5em !important;
+	margin-right: .5em !important;
+}
+
+.sponsorimg-large{
+	width:30%;
+	height:auto;
+	margin:auto;
+	display:inline-block;
+	margin-bottom:2%;
+	margin-left: .5em !important;
+	margin-right: .5em !important;
 }
 
 .sponsors {
