@@ -12,7 +12,6 @@
  body {
      width: 100%;
      height: 100%;
-     font-family: Titillium Web,"Helvetica Neue",Helvetica,Arial,sans-serif;
      color: #fff;
      background-color: #000;
      webkit-tap-highlight-color: rgba(255,255,255,.2);
@@ -142,6 +141,10 @@
 /* ============
     Typography
    ============ */
+body {
+    font-family: Titillium Web,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}   
+
  h1,
  h2,
  h3,
@@ -693,8 +696,7 @@
 /* ================
     Sponsor Section
    ================ */
-.sponsorimg-medium{
-   width:22%;
+.sponsorimg {
    height:auto;
    margin:auto;
    display:inline-block;
@@ -703,24 +705,16 @@
    margin-right: 0.5em !important;
 }
 
-.sponsorimg-small{
-	width:11%;
-	height:auto;
-	margin:auto;
-	display:inline-block;
-	margin-bottom:2%;
-	margin-left: .5em !important;
-	margin-right: .5em !important;
+.sponsorimg.medium{
+   width:25%;
 }
 
-.sponsorimg-large{
+.sponsorimg.small{
+	width:14%;
+}
+
+.sponsorimg.large{
 	width:30%;
-	height:auto;
-	margin:auto;
-	display:inline-block;
-	margin-bottom:2%;
-	margin-left: .5em !important;
-	margin-right: .5em !important;
 }
 
 .sponsors {
@@ -746,6 +740,12 @@
 .sponsor-section .table td {
 	width: 33%;
 	border: none;
+}
+
+.family-sponsor-table h4{
+    text-transform: none;
+     font-family: Titillium Web,"Helvetica Neue",Helvetica,Arial,sans-serif;
+     font-weight: 600;
 }
 
 
@@ -885,10 +885,6 @@ footer p {
        height: 80vw !important;
        max-width: 80vw !important;
    }
-
-   .sponsorimg {
-       width: 150px;
-   }
 }
 
 @media only screen and (min-width:768px) {
@@ -959,12 +955,22 @@ footer p {
        margin: 8px 0;
    }
 
-   .sponsor-table td{
+   .family-sponsor-table td{
        display: block;
        -webkit-transform: translateX(100%);
            -ms-transform: translateX(100%);
                transform: translateX(100%);
    }
+   
+   .sponsorimg {
+       width: 175px !important;
+   }
+   
+   .sponsorimg.small {
+       width: 125px !important;
+   }
+   
+   
 }
 
 @media only screen and (min-width: 992px) {
