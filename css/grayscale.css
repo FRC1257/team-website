@@ -435,7 +435,8 @@
    border-right: 0 solid #fff;
    border-bottom: 14px solid transparent;
    -webkit-transform: translateY(-50%);
-           transform: translateY(-50%);
+           -ms-transform: translateY(-50%);
+       transform: translateY(-50%);
    content: " ";
  }
 
@@ -455,7 +456,8 @@
    -webkit-transition: all 0.3s ease-in-out;
            transition: all 0.3s ease-in-out;
    -webkit-transform: translateY(-50%);
-           transform: translateY(-50%);
+           -ms-transform: translateY(-50%);
+       transform: translateY(-50%);
  }
 
  .timeline-badge-after {
@@ -596,7 +598,10 @@
  	color: white;
  	margin-left: 28.28px;
  }
-
+ 
+.first-word {
+    font-size: 0.9em;
+}
  .first-rainbow .first-link a:hover {
    color: rgb(230,230,230);
  }
@@ -631,7 +636,8 @@
  	top: 50%;
  	left: 100%;
  	-webkit-transform: translate(-50%,-50%) rotate(45deg);
- 	        transform: translate(-50%,-50%) rotate(45deg);
+ 	        -ms-transform: translate(-50%,-50%) rotate(45deg);
+ 	    transform: translate(-50%,-50%) rotate(45deg);
  	background: inherit;
  	border-radius: 3px;
  }
@@ -803,7 +809,8 @@ footer p {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
 }
 
 .social-media-links .glyphicon {
@@ -813,7 +820,8 @@ footer p {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
 }
 
 .social-media-links a.btn-circle {
@@ -827,7 +835,9 @@ footer p {
     margin: 0 0.25em;
 }
 .social-media-links .btn-circle:hover {
-    background: rgba(255,255,255,.7);
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
 }
 
 .social-media-links .blue-alliance-logo {
@@ -941,7 +951,9 @@ footer p {
 
    .sponsor-table td{
        display: block;
-       transform: translateX(100%);
+       -webkit-transform: translateX(100%);
+           -ms-transform: translateX(100%);
+               transform: translateX(100%);
    }
 }
 
@@ -953,7 +965,8 @@ footer p {
    }
    .contact-info-table .table-title {
      -webkit-transform: translateX(34px);
-             transform: translateX(34px);
+             -ms-transform: translateX(34px);
+         transform: translateX(34px);
    }
    .contact-info-table .icon-above{
        display: inline-block;
@@ -964,12 +977,14 @@ footer p {
         position: relative;
         right: -100%;
         -webkit-transform: translateY(100%);
-                transform: translateY(100%);
+                -ms-transform: translateY(100%);
+            transform: translateY(100%);
     }
 
     .contact-info-table .icon-above .home-icon {
         -webkit-transform: translateY(175%);
-                transform: translateY(175%);
+                -ms-transform: translateY(175%);
+            transform: translateY(175%);
     }
 }
 
