@@ -591,6 +591,16 @@
  	padding-right: 15px;
  }
 
+ .first-rainbow .first-link:first-child {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+ }
+
+ .first-rainbow .first-link:last-child {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+ }
+
  .first-rainbow .first-link a{
  	line-height: 40px;
  	display: inline-block;
