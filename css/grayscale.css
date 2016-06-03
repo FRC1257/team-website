@@ -143,7 +143,7 @@
    ============ */
 body {
     font-family: Titillium Web,"Helvetica Neue",Helvetica,Arial,sans-serif;
-}   
+}
 
  h1,
  h2,
@@ -165,14 +165,14 @@ body {
  }
 
  a {
-     color: #42dca3;
+     color: white;
      -webkit-transition: all .2s ease-in-out;
      transition: all .2s ease-in-out;
  }
 
  a:hover,
  a:focus {
-     text-decoration: none;
+     text-decoration: underline;
  }
 
  .light {
@@ -366,6 +366,7 @@ body {
 
 .contact-info-table a:hover {
     color: rgba(255,255,255,0.8);
+    text-decoration: none;
 }
 
 
@@ -611,13 +612,10 @@ body {
  	color: white;
  	margin-left: 28.28px;
  }
- 
+
 .first-word {
     font-size: 0.9em;
 }
- .first-rainbow .first-link a:hover {
-   color: rgb(230,230,230);
- }
 
  .first-link.css-flljr {
      background: rgb(6,115,60);
@@ -678,6 +676,10 @@ body {
 
  #awards > .awards-section p {
 	text-align: center;
+ }
+
+ #awards a:hover {
+   color: white;
  }
 
  .awards-title {
@@ -961,16 +963,16 @@ footer p {
            -ms-transform: translateX(100%);
                transform: translateX(100%);
    }
-   
+
    .sponsorimg {
        width: 175px !important;
    }
-   
+
    .sponsorimg.small {
        width: 125px !important;
    }
-   
-   
+
+
 }
 
 @media only screen and (min-width: 992px) {
