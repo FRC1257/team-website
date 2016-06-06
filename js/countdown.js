@@ -51,8 +51,24 @@ setInterval(function () {
     minutes = parseInt(seconds_left / 60);
     seconds = parseInt(seconds_left % 60);
 
-    // format countdown string + set tag value
-    countdown.innerHTML = '<span class="days">' + days +  ' <b>Days</b></span> <span class="hours">' + hours + ' <b>Hours</b></span> <span class="minutes">'
-    + minutes + ' <b>Minutes</b></span> <span class="seconds">' + seconds + ' <b>Seconds</b></span>';
+    /*  Decimal Numbers.  Computationally dumb and  messy.  Only enable for looks.
+    if (seconds_left % 60 > 10)
+    {
+		seconds = (seconds_left % 60).toPrecision(3);
+	}
+	else if (seconds_left % 60 < 10 && seconds_left % 60 > 1)
+	{
+		seconds = (seconds_left % 60).toPrecision(2);
+	}
+	else
+	{
+		seconds = (seconds_left % 60).toPrecision(1);
+	}
+	*/
 
-}, 500);
+
+    // format countdown string + set tag value
+    countdown.innerHTML = '<span class="days"><b>' + days +  '</b> Days</span> <span class="hours"><b>' + hours + '</b> Hours</span> <span class="minutes"><b>'
+    + minutes + '</b> Minutes</span> <span class="seconds"><b>' + seconds + '</b> Seconds</span>';
+
+}, 1000);
