@@ -695,6 +695,43 @@ body {
  }
 
 
+
+/* Countdown Clock to IRI*/
+
+.counter {
+  background: #2C2C2C;
+  -moz-box-shadow:    inset 0 0 5px #000000;
+  -webkit-box-shadow: inset 0 0 5px #000000;
+  box-shadow:         inset 0 0 5px #000000;
+  min-height: 150px;
+  text-align: center;
+}
+
+.counter h3 {
+  color: #E5E5E5;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+#countdown {
+  color: #FFFFFF;
+}
+
+#countdown span {
+  color: #E5E5E5;
+  font-size: 26px;
+  font-weight: normal;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+
 /* ================
     Sponsor Section
    ================ */
