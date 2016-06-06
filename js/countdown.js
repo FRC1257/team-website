@@ -3,6 +3,8 @@ var date_one = new Date('Jun, 25, 2016').getTime(); // MidKnight Mayhem
 var date_two = new Date('Jul, 15, 2016').getTime(); //IRI
 var target_date = new Date().getTime();
 
+var test = new Date('Jun, 25, 2016').getTime() + 56564;
+
 //Change with each event.  "Next Event" can be removed if you want...
 // Also, this is all /*Logic*/
 
@@ -10,15 +12,24 @@ var predecessorstring='Next Event: ';
 var eventone = predecessorstring.concat('<a href="http://www.midknightmayhem.org/">MidKnight Mayhem</a>');
 var eventtwo = predecessorstring.concat('<a href="http://indianaroboticsinvitational.org/">Indiana Robotics Invitational</a>');
 
-if (date_one > new Date().getTime() && date_two > new Date().getTime()) //less than both dates
+if (date_one + 86400000> new Date().getTime() && date_two + 86400000> new Date().getTime()) //less than both dates
 {
 	document.getElementById("nextevent").innerHTML = eventone;
 	target_date=date_one;
+	if (date_one < test < date_one + 86400000)
+	{
+		document.getElementById("countdown").style.background="#3D763C";
+
+	}
 }
-else if (date_one < new Date().getTime() && date_two > new Date().getTime()) //less than second, but not first.
+else if (date_one + 86400000< new Date().getTime() && date_two + 86400000> new Date().getTime()) //less than second, but not first.
 {
 target_date=date_two;
 document.getElementById("nextevent").innerHTML = eventone;
+	if (date_two < new Date.getDate() < date_two + 86400000)
+	{
+		document.getElementById("countdown").style.background="#3D763C";
+	}
 }
 else //It's past the last event.
 {
