@@ -4,9 +4,13 @@ var date_two = new Date('Jul, 15, 2016').getTime(); //IRI
 var target_date = new Date().getTime();
 if (date_one > new Date().getTime())
 {
+	document.getElementById("nextevent").innerHTML = 'Next Event: <a href="http://www.midknightmayhem.org/">MidKnight Mayhem</a>';
 	target_date=date_one;
 }
-else target_date=date_two;
+else {
+target_date=date_two;
+document.getElementById("nextevent").innerHTML = 'Next Event: <a href="http://indianaroboticsinvitational.org/">Indiana Robotics Invitational</a>';
+}
 
 
 // variables for time units
