@@ -1,6 +1,6 @@
 // set the date we're counting down to
-var date_one = (new Date('Jun, 25, 2016').getTime()) + 43200000; // MidKnight Mayhem
-var date_two = new Date('Jul, 15, 2016').getTime() + 43200000; //IRI
+var date_one = (new Date('Jun, 25, 2016, 12:00:00 GMT-400').getTime()); // MidKnight Mayhem
+var date_two = new Date('Jul, 15, 2016 12:00:00 GMT-400').getTime(); //IRI
 var target_date = new Date().getTime(); //JUST MAKE IT A DATE OKAY
 
 //Change with each event.  "Next Event" can be removed if you want...
