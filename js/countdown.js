@@ -1,6 +1,14 @@
 // set the date we're counting down to
-var target_date = new Date('Jun, 25, 2016').getTime();
- 
+var date_one = new Date('Jun, 25, 2016').getTime(); // MidKnight Mayhem
+var date_two = new Date('Jul, 15, 2016').getTime(); //IRI
+var target_date = new Date().getTime();
+if (date_one > new Date().getTime())
+{
+	target_date=date_one;
+}
+else target_date=date_two;
+
+
 // variables for time units
 var days, hours, minutes, seconds;
  
