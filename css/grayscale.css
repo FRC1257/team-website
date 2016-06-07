@@ -1008,7 +1008,15 @@ footer p {
        width: 125px !important;
    }
 
-
+    #countdown span {
+        display: block;
+    }
+    
+    #countdown .seconds,
+    #nextevent {
+        margin-bottom: 0px;
+        padding-bottom: 15px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
