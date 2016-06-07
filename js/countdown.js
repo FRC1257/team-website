@@ -1,6 +1,6 @@
 "use strict";
 
-var currentDate = new Date('Jun, 25, 2016, 12:00:00 GMT-400').getTime();
+var currentDate = new Date().getTime();
 var countdown = document.getElementById('countdown');
 
 function postEventInProgress(event) {
@@ -11,7 +11,7 @@ function postEventInProgress(event) {
 function addCountdown(futureDate) {
     var seconds_left = (futureDate - new Date().getTime()) / 1000;
     var days, hours, minutes, seconds;
-    
+
     // do some time calculations
     days = parseInt(seconds_left / 86400);
     seconds_left = seconds_left % 86400;
@@ -33,7 +33,7 @@ class event {
         this.end = end;
         this.link = link;
     }
-    
+
     post() {
         addCountdown(this.start);
     }
@@ -56,21 +56,21 @@ events.push(new event(
                 '<a href="http://indianaroboticsinvitational.org/">Indiana Robotics Invitational</a>'
                 ));
 
-                
+
 
 //Sort the events array based on start date
 events.sort(function(a,b) {return a.start - b.start; });
 
 for(var currentEvent in events) {
-    
-    //If the curretEvent in the array hasn't occured yet, 
+
+    //If the curretEvent in the array hasn't occured yet,
     if(events[currentEvent].start > currentDate) {
         document.getElementById("nextevent").innerHTML = 'Next Event: ' + events[currentEvent].link;
         setInterval(function() { events[currentEvent].post(); }, 1000);
         eventPosted = true;
         break;
     } //If this statement is true, the start of the event has passed
-    
+
     //If the event is in progress, post it as such
     else if(events[currentEvent].end > currentDate) {
         postEventInProgress(events[currentEvent]);
