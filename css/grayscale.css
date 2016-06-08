@@ -173,6 +173,7 @@ body {
  a:hover,
  a:focus {
      text-decoration: underline;
+     color: white;
  }
 
  .light {
@@ -377,6 +378,7 @@ body {
    list-style: none;
    padding: 20px 0 20px;
    position: relative;
+   margin-bottom: 0px;
  }
 
  .timeline:before {
@@ -499,6 +501,61 @@ body {
  .timeline-body > p + p {
    margin-top: 5px;
  }
+
+    /* Countdown */
+.counter {
+  background: black;
+  border: 1px solid white;
+  min-height: 150px;
+  text-align: center;
+  border-radius: 2px;
+  width: 70vw;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*
+.counter:before {
+    content: "";
+    z-index: -1;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%) rotate(45deg);
+} */
+
+.counter h3 {
+  color: #E5E5E5;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+.countdown-title {
+    margin: 0;  
+    padding-top: 0.5em;
+}
+
+#countdown {
+  color: #FFFFFF;
+}
+
+#countdown span {
+  color: #E5E5E5;
+  font-size: 26px;
+  font-weight: normal;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
 
 
 /* ==============
@@ -693,44 +750,8 @@ body {
  #about .row {
      position: relative;
  }
-
-/* Countdown */
-
-.counter {
-  background: #2C2C2C;
-  -moz-box-shadow:    inset 0 0 5px #000000;
-  -webkit-box-shadow: inset 0 0 5px #000000;
-  box-shadow:         inset 0 0 5px #000000;
-  min-height: 150px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.counter h3 {
-  color: #E5E5E5;
-  font-size: 14px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: lighter;
-  letter-spacing: 1px;
-  padding-top: 20px;
-  margin-bottom: 30px;
-}
-
-#countdown {
-  color: #FFFFFF;
-}
-
-#countdown span {
-  color: #E5E5E5;
-  font-size: 26px;
-  font-weight: normal;
-  margin-left: 20px;
-  margin-right: 20px;
-  text-align: center;
-}
-
-
+ 
+ 
 /* ================
     Sponsor Section
    ================ */

@@ -39,6 +39,8 @@ class event {
     }
 }
 
+
+/* Main */
 var events = [];
 var eventPosted = false;
 
@@ -46,14 +48,14 @@ events.push(new event(
                 'Midknight Mayhem',
                 new Date('Jun, 25, 2016, 12:00:00 GMT-400').getTime(),
                 new Date('Jun, 26, 2016, 12:00:00 GMT-400').getTime(),
-                '<a href="http://www.midknightmayhem.org/">MidKnight Mayhem</a>'
+                '<a target="_blank" href="http://www.midknightmayhem.org/">MidKnight Mayhem</a>'
                 ));
 
 events.push(new event(
                 'Indiana Robotics Invitational',
                 new Date('Jul, 15, 2016, 12:00:00 GMT-400').getTime(),
                 new Date('Jul, 17, 2016, 12:00:00 GMT-400').getTime(),
-                '<a href="http://indianaroboticsinvitational.org/">Indiana Robotics Invitational</a>'
+                '<a target="_blank" href="http://indianaroboticsinvitational.org/">Indiana Robotics Invitational</a>'
                 ));
 
 
