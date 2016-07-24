@@ -4,8 +4,6 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
- @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,300);
-
 /* =================
     General Styling
    ================= */
@@ -44,6 +42,7 @@
      color: #000;
      background-color: #42dca3;
  }
+
  .btn-circle {
      position: relative;
      width: 70px;
@@ -258,9 +257,13 @@ body {
      padding-right: .5em;
  }
 
- .navbar .dropdown li a:hover {
+.dropdown li a:hover {
     color: black !important;
     font-weight: 800;
+ }
+
+ .open .navbar-nav {
+   overflow: visible;
  }
 
 /* ==============
@@ -506,7 +509,6 @@ body {
 .counter {
   background: black;
   border: 1px solid white;
-  min-height: 150px;
   text-align: center;
   border-radius: 2px;
   width: 70vw;
@@ -540,7 +542,7 @@ body {
 }
 
 .countdown-title {
-    margin: 0;  
+    margin: 0;
     padding-top: 0.5em;
 }
 
@@ -652,12 +654,12 @@ body {
  	padding-right: 15px;
  }
 
- .first-rainbow .first-link:first-child {
+ .css-flljr {
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
  }
 
- .first-rainbow .first-link:last-child {
+ .css-frc {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
  }
@@ -750,8 +752,8 @@ body {
  #about .row {
      position: relative;
  }
- 
- 
+
+
 /* ================
     Sponsor Section
    ================ */
@@ -864,11 +866,7 @@ footer p {
    margin: 0;
 }
 
-.social-media-links {
-    margin-top: 1em;
-}
-
-.social-media-links img{
+.social-media-links img {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -889,8 +887,8 @@ footer p {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .social-media-links a.btn-circle {
@@ -901,7 +899,7 @@ footer p {
     background: white;
     -webkit-transition: all 0.2s ease-in-out;
             transition: all 0.2s ease-in-out;
-    margin: 0 0.25em;
+    margin: 10px 0.25em;
 }
 .social-media-links .btn-circle:hover {
     -webkit-transform: scale(1.1);
@@ -921,7 +919,7 @@ footer p {
    .navbar-brand .light:last-child {
        position: absolute;
        opacity: 0;
-       filter:alpha(opacity=0);
+       filter: alpha(opacity=0);
        pointer-events: none;
    }
 }
@@ -931,12 +929,34 @@ footer p {
     width: 350px;
   }
 }
+
 @media only screen and (max-width: 450px) {
   .intro,
   #awards .awards-section,
   #robots .robots-section {
     background-attachment: scroll;
   }
+
+  .social-media-links a.btn-circle {
+    height: 36px;
+    width: 36px;
+    margin: 8px;
+  }
+
+  .social-media-links img {
+    height: 18px;
+    width: 18px;
+  }
+
+  .social-media-links .blue-alliance-logo {
+    height: 26px;
+    width: 26px;
+  }
+
+  .social-media-links .glyphicon {
+    font-size: 10px;
+  }
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -1032,11 +1052,27 @@ footer p {
     #countdown span {
         display: block;
     }
-    
+
     #countdown .seconds,
     #nextevent {
         margin-bottom: 0px;
         padding-bottom: 15px;
+    }
+
+    /*.navbar-collapse {
+      text-align: center;
+    }*/
+
+    .dropdown-menu li a {
+      color: #999;
+    }
+
+    .dropdown-menu li a:hover {
+      color: white !important;
+    }
+
+    .timeline > li > .timeline-panel:after {
+      display: none;
     }
 }
 
@@ -1092,6 +1128,17 @@ footer p {
 	.first-rainbow .first-link:after {
 		display: none;
 	}
+
+  .css-flljr {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 3px;
+  }
+
+  .css-frc {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 3px;
+  }
+
 }
 
 @media only screen and (max-width: 1000px) {
