@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="FRCClock/stylesheet.css">
+    		<script type="text/javascript" src="FRCClock/teams.json"></script>
+            <title>FRC Clock</title>
+        </head>
+    <script>
+		var teamtime = 1;
+		function getTeamName(teamNumber)
+		{
+			var teamGot = JSON.parse(teams);
+			return teamGot[teamNumber].name;
+		}
+		function startTime()
+		{
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			h = leadZero(h);
+			m = leadZero(m);
+			teamtime_str = "" + h + m;
+			teamtime = parseInt(teamtime_str, 10);
+			document.getElementById('clock').innerHTML = h + ":" + m + "<br><br>" + getTeamName(teamtime);
+			var t = setTimeout(startTime, 500);
+		}
+		function leadZero(i)
+		{
+			if (i < 10)
+			{
+				i = "0" + i
+			};
+			return i;
+		}
+	</script>
+
+	<body onload="startTime()">
+		<h1>Welcome to the FRC Clock!</h1>
+		<div id="clock"></div>
+	</body>
+</html>

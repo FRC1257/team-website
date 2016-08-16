@@ -1,0 +1,6 @@
+FRC Clock v1
+
+Open 'index.html' in a browser of your choice and have fun!
+
+Created by Alan Richman (FRC1257)
+Special thanks to Tim Flynn for great assistance on creation of the teams list. And to Brian Maher and Jeff Tan for their willingness to help!
