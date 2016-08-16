@@ -261,7 +261,7 @@ body {
     display: block;
     opacity: 0;
     pointer-events: none;
-    transform: translateY(15px);
+    transform: translateY(10px);
     transition: all 300ms ease-in-out;
     border-radius: 3px !important;
 }
@@ -543,20 +543,6 @@ body {
   position: relative;
 }
 
-/*
-.counter:before {
-    content: "";
-    z-index: -1;
-    display: block;
-    width: 20px;
-    height: 20px;
-    background: white;
-    position: absolute;
-    left: 50%;
-    top: 0%;
-    transform: translate(-50%, -50%) rotate(45deg);
-} */
-
 .counter h3 {
   color: #E5E5E5;
   font-size: 14px;
@@ -779,6 +765,76 @@ body {
  #about .row {
      position: relative;
  }
+
+  /* Banner Code (From https://github.com/ErikBoesen/banners.css) */
+  @font-face {
+      font-family: 'Adam';
+      src: url('../fonts/adam.otf') format('opentype');
+      unicode-range: U+0000-00FF;
+  }
+  /* To be standard-compliant, this rule should be applied to *, but for compat it's restricted here. */
+  .banners,
+  .banners *,
+  .banner {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  .banners {
+      display: block;
+      height: 280px;
+      padding: 0;
+  }
+  .banner-parent {
+      width: 100vw;
+      overflow: hidden;
+  }
+
+  .banner-parent .banners {
+      width: auto;
+      text-align: center;
+      margin: 0 auto;
+      white-space: nowrap;
+  }
+  .banners li,
+  .banner {
+      line-height: 1.2;
+      font-family: 'Adam', sans-serif;
+      font-size:16px;
+      text-align: center;
+      vertical-align: top;
+      display: inline-block;
+      margin: 0 3px 100px;
+      width: 160px;
+      position: relative;
+      background: #0f4bcb;
+      color: white;
+      padding: 10px;
+      white-space: normal;
+  }
+  .banners img,
+  .banner img {
+      width: 80%;
+      margin-bottom: 20px;
+      margin-top:10px;
+  }
+  .banners li:after,
+  .banner:after {
+      content: '';
+      position: absolute;
+      display: block;
+      border: 80px solid #0f4bcb;
+      border-top-width: 5px;
+      border-bottom: 40px transparent solid;
+      top: 100%;
+      left: 0;
+  }
+  .banners li,
+  .banners li:after,
+  .banner,
+  .banner:after {
+      -webkit-filter: drop-shadow(0 10px 5px rgba(0, 0, 0, .1));
+  }
 
 
 /* ================

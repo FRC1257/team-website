@@ -18,8 +18,9 @@
 }
 .banner-parent {
     width: 100vw;
-    overflow: scroll;
+    overflow: hidden;
 }
+
 .banner-parent .banners {
     width: auto;
     text-align: center;
