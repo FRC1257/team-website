@@ -175,6 +175,10 @@ body {
      color: white;
  }
 
+.sponsors a:hover {
+	text-decoration: none !important;
+}
+
  .light {
      font-weight: 400;
  }
@@ -1083,6 +1087,8 @@ footer p {
 }
 
 @media only screen and (max-width:767px) {
+
+
    .contact-info-table {
        text-align: left;
    }
@@ -1131,6 +1137,10 @@ footer p {
    .sponsorimg.small {
        width: 125px !important;
    }
+
+   .banners {
+	display:none;
+}
 
     #countdown span {
         display: block;
