@@ -525,6 +525,7 @@ body {
  .timeline-title {
    margin-top: 0;
    color: inherit;
+   font-size: 1.75em;
  }
 
  .timeline-body > p,
@@ -532,11 +533,12 @@ body {
    margin-bottom: 0;
  }
 
- .timeline-body > p + p {
+.timeline-body > p + p {
    margin-top: 5px;
- }
+}
 
     /* Countdown */
+
 .counter {
   background: black;
   border: 1px solid white;
@@ -565,6 +567,7 @@ body {
 
 #countdown {
   color: #FFFFFF;
+  margin-bottom: 1em;
 }
 
 #countdown span {
@@ -575,6 +578,7 @@ body {
   margin-right: 20px;
   text-align: center;
 }
+
 
 
 /* ==============
@@ -1087,11 +1091,18 @@ footer p {
 }
 
 @media only screen and (max-width:767px) {
+   #countdown span {
+     font-size: 1.25em;
+   }
 
+   .timeline-title {
+     font-size: 1.25em;
+   }
 
    .contact-info-table {
        text-align: left;
    }
+
     .carousel .robotimg {
        height: 80vw;
    }
@@ -1139,14 +1150,13 @@ footer p {
    }
 
    .banners {
-	display:none;
-}
+	    display:none;
+    }
 
     #countdown span {
         display: block;
     }
 
-    #countdown .seconds,
     #nextevent {
         margin-bottom: 0px;
         padding-bottom: 15px;
