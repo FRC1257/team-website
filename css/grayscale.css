@@ -945,11 +945,15 @@ body {
 
 
 footer {
-   padding: 50px 0;
+   padding: 25px 0;
 }
 
 footer p {
    margin: 0;
+}
+.first-logo {
+    width: 50px;
+    margin-top: 10px;
 }
 
 .social-media-links img {
