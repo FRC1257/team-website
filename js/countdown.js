@@ -4,8 +4,8 @@ var currentDate = new Date().getTime();
 var countdown = document.getElementById('countdown');
 
 function postEventInProgress(event) {
-    countdown.innerHTML = "<span>We are currently competing in " + event.link + "!</span>";
-    countdown.parentElement.style.background="#3D763C";
+    countdown.innerHTML = "<span>We are currently competing in " + event.atag + "!</span>";
+    countdown.parentElement.style.background="#5aad62";
 }
 
 function addCountdown(futureDate) {
@@ -22,16 +22,16 @@ function addCountdown(futureDate) {
     minutes = parseInt(seconds_left / 60);
     seconds = parseInt(seconds_left % 60);
 
-    countdown.innerHTML = '<span class="days"><b>' + days +  '</b> Days</span> <span class="hours"><b>' + hours + '</b> Hours</span> <span class="minutes"><b>'
-    + minutes + '</b> Minutes</span> <span class="seconds"><b>' + seconds + '</b> Seconds</span>';
+    countdown.innerHTML = '<span class="days"><strong>' + days +  '</strong> Days</span> <span class="hours"><strong>' + hours + '</strong> Hours</span> <span class="minutes"><strong>' + minutes + '</strong> Minutes</span> <span class="seconds"><strong>' + seconds + '</strong> Seconds</span>';
 }
 
 class event {
     constructor(name, start, end, link) {
-        this.name = name;
+        this.name  = name;
         this.start = start;
-        this.end = end;
-        this.link = link;
+        this.end   = end;
+        this.link  = link;
+        this.atag  = '<a target="_blank" href="' + link + '"><strong>' + name + '</strong></a>'
     }
 
     post() {
@@ -45,17 +45,17 @@ var events = [];
 var eventPosted = false;
 
 events.push(new event(
-                'Midknight Mayhem',
-                new Date('Jun, 25, 2016, 12:00:00 GMT-400').getTime(),
-                new Date('Jun, 26, 2016, 12:00:00 GMT-400').getTime(),
-                '<a target="_blank" href="http://www.midknightmayhem.org/">MidKnight Mayhem</a>'
+                'Hatboro-Horsham',
+                new Date('Mar, 3, 2017, 8:00:00 GMT-400').getTime(),
+                new Date('Mar, 5, 2017, 8:00:00 GMT-400').getTime(),
+                'https://www.thebluealliance.com/event/2017pahat/'
                 ));
 
 events.push(new event(
-                'Indiana Robotics Invitational',
-                new Date('Jul, 15, 2016, 12:00:00 GMT-400').getTime(),
-                new Date('Jul, 17, 2016, 12:00:00 GMT-400').getTime(),
-                '<a target="_blank" href="http://indianaroboticsinvitational.org/">Indiana Robotics Invitational</a>'
+                'Bridgewater-Raritan',
+                new Date('Mar, 17, 2017, 8:00:00 GMT-400').getTime(),
+                new Date('Mar, 19, 2017, 8:00:00 GMT-400').getTime(),
+                'https://www.thebluealliance.com/event/2017njbri'
                 ));
 
 
@@ -65,9 +65,9 @@ events.sort(function(a,b) {return a.start - b.start; });
 
 for(var currentEvent in events) {
 
-    //If the curretEvent in the array hasn't occured yet,
+    //If the currentEvent in the array hasn't occured yet,
     if(events[currentEvent].start > currentDate) {
-        document.getElementById("nextevent").innerHTML = 'Next Event: ' + events[currentEvent].link;
+        document.getElementById("nextevent").innerHTML = 'Next Event: <strong>' + events[currentEvent].atag + '</strong>';
         setInterval(function() { events[currentEvent].post(); }, 1000);
         eventPosted = true;
         break;
