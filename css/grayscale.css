@@ -955,6 +955,11 @@ footer {
 footer p {
    margin: 0;
 }
+
+#sponsors ~ footer p {
+    text-align: center;
+}
+
 .first-logo {
     width: 50px;
     margin-top: 10px;
