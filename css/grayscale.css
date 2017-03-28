@@ -12,10 +12,8 @@
 body {
     width: 100%;
     height: 100%;
-
     color: #fff;
     background-color: #000;
-
     webkit-tap-highlight-color: rgba(255, 255, 255, .2);
 }
 
@@ -28,9 +26,7 @@ html {
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     text-transform: uppercase;
-
     border-radius: 0;
-
     font-family: PT Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
 }
@@ -50,19 +46,15 @@ html {
 
 .btn-circle {
     position: relative;
-
     width: 70px;
     height: 70px;
     margin: 0.25em 0;
-
     -webkit-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
-
     color: #fff;
     border: 2px solid #fff;
     border-radius: 100% !important;
     background: 0 0;
-
     font-size: 40px;
 }
 
@@ -132,7 +124,6 @@ img::-moz-selection {
 
 .group:before, .group:after {
     display: table;
-
     content: "";
 }
 
@@ -151,17 +142,14 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 35px;
-
     letter-spacing: 1px;
     text-transform: uppercase;
-
     font-family: PT Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
 
 p {
     margin: 0 0 25px;
-
     font-size: 18px;
     line-height: 1.5;
 }
@@ -169,13 +157,11 @@ p {
 a {
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-
     color: white;
 }
 
 a:hover, a:focus {
     text-decoration: underline;
-
     color: white;
 }
 
@@ -199,19 +185,15 @@ a:hover, a:focus {
 .navbar-custom {
     width: 100vw;
     margin-bottom: 0;
-
     text-transform: uppercase;
-
     border-bottom: 1px solid rgba(255, 255, 255, .3);
     background-color: #000;
-
     font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .navbar-custom .navbar-brand {
     -webkit-transition: none;
     transition: none;
-
     font-size: 18px;
     font-weight: 700;
 }
@@ -222,9 +204,7 @@ a:hover, a:focus {
 
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
-
     color: #fff;
-
     font-size: 16px;
 }
 
@@ -275,11 +255,9 @@ a:hover, a:focus {
 
 .dropdown-menu {
     display: block;
-
     transition: all 300ms ease-in-out;
     transform: translateY(10px);
     pointer-events: none;
-
     opacity: 0;
     border-radius: 3px !important;
 }
@@ -287,7 +265,6 @@ a:hover, a:focus {
 .dropdown.open .dropdown-menu {
     transform: none;
     pointer-events: all;
-
     opacity: 1;
 }
 
@@ -295,21 +272,16 @@ a:hover, a:focus {
     position: absolute;
     right: 20%;
     bottom: 100%;
-
     display: block;
-
     width: 0;
     height: 0;
-
     content: "";
-
     border: 10px solid transparent;
     border-bottom-color: white;
 }
 
 .dropdown li a:hover {
     color: black !important;
-
     font-weight: 800;
 }
 
@@ -324,16 +296,12 @@ a:hover, a:focus {
 
 .intro {
     position: relative;
-
     display: table;
     overflow: visible;
-
     width: 100%;
     height: 100%;
     padding-top: 100px;
-
     text-align: center;
-
     color: #fff;
     background: url(../img/star_bg.jpg) no-repeat bottom center scroll;
     background-attachment: fixed;
@@ -343,7 +311,6 @@ a:hover, a:focus {
 
 .intro-logo {
     display: inline-block;
-
     width: 250px;
     margin: 0 0 2em 0;
 }
@@ -351,9 +318,7 @@ a:hover, a:focus {
 .intro .intro-body {
     position: relative;
     z-index: 2;
-
     display: table-cell;
-
     vertical-align: middle;
 }
 
@@ -363,13 +328,11 @@ a:hover, a:focus {
 
 .intro .intro-body .intro-text {
     margin-bottom: 0;
-
     font-size: 18px;
 }
 
 .btn-circle .glyphicon-menu-down {
     margin-top: .15em;
-
     -webkit-transition-duration: 1s;
     -moz-transition-duration: 1s;
     -webkit-transition-property: -webkit-transform;
@@ -394,13 +357,11 @@ a:hover, a:focus {
 
 .contact-info-table, .contact-info-table tr, .contact-info-table td {
     text-align: center;
-
     border: none;
 }
 
 .contact-info-table, .contact-info-table td, .contact-info-table tr {
     border: none !important;
-
     font-size: 1em;
 }
 
@@ -414,9 +375,7 @@ a:hover, a:focus {
 
 .contact-info-table {
     width: 100%;
-
     text-transform: uppercase;
-
     font-family: 'PT Sans', 'Titillium Web', 'Helvetica Neue', sans-serif;
     font-size: 14px;
 }
@@ -432,7 +391,6 @@ a:hover, a:focus {
 
 .contact-info-table a:hover {
     text-decoration: none;
-
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -443,10 +401,8 @@ a:hover, a:focus {
 
 .timeline {
     position: relative;
-
     margin-bottom: 0px;
     padding: 20px 0 20px;
-
     list-style: none;
 }
 
@@ -455,24 +411,19 @@ a:hover, a:focus {
     top: 0;
     bottom: 0;
     left: 50%;
-
     width: 3px;
     margin-left: -1.5px;
-
     content: " ";
-
     background-color: #eeeeee;
 }
 
 .timeline>li {
     position: relative;
-
     margin-bottom: 20px;
 }
 
 .timeline>li:before, .timeline>li:after {
     display: table;
-
     content: "";
 }
 
@@ -482,7 +433,6 @@ a:hover, a:focus {
 
 .timeline>li:before, .timeline>li:after {
     display: table;
-
     content: " ";
 }
 
@@ -492,12 +442,9 @@ a:hover, a:focus {
 
 .timeline>li>.timeline-panel {
     position: relative;
-
     float: left;
-
     width: 46%;
     padding: 20px;
-
     border: 1px solid #d4d4d4;
     border-radius: 2px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
@@ -511,14 +458,11 @@ a:hover, a:focus {
     position: absolute;
     top: 50%;
     right: -14px;
-
     display: inline-block;
-
     content: " ";
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-
     border-top: 14px solid transparent;
     border-right: 0 solid #fff;
     border-bottom: 14px solid transparent;
@@ -529,21 +473,17 @@ a:hover, a:focus {
     position: absolute;
     top: 50%;
     left: 50%;
-
     width: 50px;
     height: 50px;
     margin-left: -25px;
-
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     text-align: center;
-
     border-radius: 50%;
     background-color: #05ED2E;
-
     font-size: 1.4em;
     line-height: 50px;
 }
@@ -559,7 +499,6 @@ a:hover, a:focus {
 .timeline>li.timeline-inverted>.timeline-panel:before {
     right: auto;
     left: -15px;
-
     border-right-width: 15px;
     border-left-width: 0;
 }
@@ -567,16 +506,13 @@ a:hover, a:focus {
 .timeline>li.timeline-inverted>.timeline-panel:after {
     right: auto;
     left: -14px;
-
     border-right-width: 14px;
     border-left-width: 0;
 }
 
 .timeline-title {
     margin-top: 0;
-
     color: inherit;
-
     font-size: 1.75em;
 }
 
@@ -593,11 +529,8 @@ a:hover, a:focus {
 
 .counter {
     position: relative;
-
     margin: 0 auto;
-
     text-align: center;
-
     border: 1px solid white;
     border-radius: 2px;
     background: black;
@@ -606,11 +539,8 @@ a:hover, a:focus {
 .counter h3 {
     margin-bottom: 30px;
     padding-top: 20px;
-
     letter-spacing: 1px;
-
     color: #E5E5E5;
-
     font-size: 14px;
     font-weight: lighter;
     font-style: normal;
@@ -624,18 +554,14 @@ a:hover, a:focus {
 
 #countdown {
     margin-bottom: 1em;
-
     color: #FFFFFF;
 }
 
 #countdown span {
     margin-right: 20px;
     margin-left: 20px;
-
     text-align: center;
-
     color: #E5E5E5;
-
     font-size: 26px;
     font-weight: normal;
 }
@@ -651,11 +577,9 @@ a:hover, a:focus {
 
 .robotimg {
     display: inline-block;
-
     max-width: 100% !important;
     height: 500px !important;
     margin: auto;
-
     box-shadow: 1px 1px 5px black;
 }
 
@@ -673,9 +597,7 @@ a:hover, a:focus {
 
 #robots>.robots-section {
     position: relative;
-
     width: 100%;
-
     background: url(../img/blurredDesignLab.jpg) no-repeat center center scroll;
     background-attachment: fixed;
     background-position: center;
@@ -684,10 +606,8 @@ a:hover, a:focus {
 
 .robots-section {
     position: relative;
-
     width: 100%;
     padding: 50px 0;
-
     color: #fff;
     background: url(../img/downloads-bg.jpg);
     background-color: #000;
@@ -710,7 +630,6 @@ a:hover, a:focus {
 
 .img-first1, .img-first2 {
     display: inline-block;
-
     width: 35%;
     margin: 1em;
 }
@@ -725,17 +644,14 @@ a:hover, a:focus {
 
 .first-rainbow {
     position: static;
-
     display: block;
     overflow-x: visible;
     overflow-y: hidden;
-
     margin-top: 40px;
 }
 
 .first-rainbow .first-link {
     position: relative;
-
     height: 40px;
     padding-right: 0;
 }
@@ -756,13 +672,9 @@ a:hover, a:focus {
 
 .first-rainbow .first-link a {
     display: inline-block;
-
     margin-left: 28.28px;
-
     vertical-align: middle;
-
     color: white;
-
     line-height: 40px;
 }
 
@@ -772,25 +684,21 @@ a:hover, a:focus {
 
 .first-link.css-flljr {
     z-index: 4;
-
     background: rgb(6, 115, 60);
 }
 
 .first-link.css-fll {
     z-index: 3;
-
     background: rgb(233, 0, 19);
 }
 
 .first-link.css-ftc {
     z-index: 2;
-
     background: rgb(243, 105, 12);
 }
 
 .first-link.css-frc {
     z-index: 1;
-
     background: rgb(0, 136, 208);
 }
 
@@ -801,17 +709,13 @@ a:hover, a:focus {
     position: absolute;
     top: 50%;
     left: 100%;
-
     display: block;
-
     width: 40px;
     height: 40px;
-
     content: "";
     -webkit-transform: translate(-50%, -50%) rotate(45deg);
     -ms-transform: translate(-50%, -50%) rotate(45deg);
     transform: translate(-50%, -50%) rotate(45deg);
-
     border-radius: 3px;
     background: inherit;
 }
@@ -831,9 +735,7 @@ a:hover, a:focus {
 
 #awards>.awards-section {
     position: relative;
-
     width: 100%;
-
     background: url(../img/events/dcmp_2016.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -865,7 +767,6 @@ a:hover, a:focus {
 
 @font-face {
     font-family: 'Adam';
-
     src: url('../fonts/adam.otf') format('opentype');
     unicode-range: U+0000-00FF;
 }
@@ -881,41 +782,33 @@ a:hover, a:focus {
 
 .banners {
     display: block;
-
     height: 280px;
     padding: 0;
 }
 
 .banner-parent {
     overflow: hidden;
-
     width: 100vw;
 }
 
 .banner-parent .banners {
     width: auto;
     margin: 0 auto;
-
     text-align: center;
     white-space: nowrap;
 }
 
 .banners li, .banner {
     position: relative;
-
     display: inline-block;
-
     width: 160px;
     margin: 0 3px 100px;
     padding: 10px;
-
     text-align: center;
     vertical-align: top;
     white-space: normal;
-
     color: white;
     background: #0f4bcb;
-
     font-family: 'Adam', sans-serif;
     font-size: 16px;
     line-height: 1.2;
@@ -931,11 +824,8 @@ a:hover, a:focus {
     position: absolute;
     top: 100%;
     left: 0;
-
     display: block;
-
     content: '';
-
     border: 80px solid #0f4bcb;
     border-top-width: 5px;
     border-bottom: 40px transparent solid;
@@ -952,7 +842,6 @@ a:hover, a:focus {
 
 .sponsorimg {
     display: inline-block;
-
     height: auto;
     margin: auto;
     margin-right: 0.5em !important;
@@ -970,7 +859,6 @@ a:hover, a:focus {
 
 .sponsorimg.large {
     margin: 0.25em;
-    
     width: 30%;
 }
 
@@ -996,13 +884,11 @@ a:hover, a:focus {
 
 .sponsor-section .table td {
     width: 33%;
-
     border: none;
 }
 
 .family-sponsor-table h4 {
     text-transform: none;
-
     font-family: Titillium Web, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600;
 }
@@ -1018,7 +904,6 @@ a:hover, a:focus {
 
 .contribution-description {
     padding-right: 1em;
-
     text-align: justify;
 }
 
@@ -1030,7 +915,6 @@ a:hover, a:focus {
 .contribution-opportunity {
     -webkit-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
-
     color: white;
 }
 
@@ -1049,9 +933,7 @@ a:hover, a:focus {
 .DCMP-team-photo, .DOW-thumbnail {
     width: 50%;
     margin: 0 0.75em 0.75em 0.75em;
-
     vertical-align: text-top;
-
     border-radius: 3px;
 }
 
@@ -1081,12 +963,9 @@ footer p {
     position: absolute;
     top: 50%;
     left: 50%;
-
     display: inline-block;
-
     width: 20px;
     height: 20px;
-
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     -webkit-transform: translate(-50%, -50%);
@@ -1098,26 +977,20 @@ footer p {
     position: absolute;
     top: 50%;
     left: 50%;
-
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-
     color: black;
-
     font-size: 20px;
 }
 
 .social-media-links a.btn-circle {
     position: relative;
-
     width: 42px;
     height: 42px;
     margin: 10px 0.25em;
-
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-
     border: none;
     background: white;
 }
@@ -1141,11 +1014,8 @@ footer p {
 @media only screen and (max-width: 360px) {
     .navbar-brand .light:last-child {
         position: absolute;
-
         pointer-events: none;
-
         opacity: 0;
-
         filter: alpha(opacity=0);
     }
 }
@@ -1188,7 +1058,6 @@ footer p {
 @media only screen and (min-width:768px) {
     p {
         margin: 0 0 35px;
-
         font-size: 20px;
         line-height: 1.6;
     }
@@ -1203,17 +1072,14 @@ footer p {
     }
     .navbar-custom {
         padding: 20px 0;
-
         -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
         transition: background .5s ease-in-out, padding .5s ease-in-out;
         letter-spacing: 1px;
-
         border-bottom: 0;
         background: 0 0;
     }
     .navbar-custom.top-nav-collapse {
         padding: 0;
-
         border-bottom: 1px solid rgba(255, 255, 255, .3);
         background: #000;
     }
@@ -1242,7 +1108,6 @@ footer p {
     }
     .sponsor-section a {
         display: block;
-
         margin-bottom: 20px;
     }
     .timeline-panel:after, .timeline-panel:before {
@@ -1252,12 +1117,10 @@ footer p {
         height: auto;
         margin: 8px 0;
         padding: 9px 15px;
-
         border: 1px solid transparent;
     }
     .family-sponsor-table td {
         display: block;
-
         -webkit-transform: translateX(100%);
         -ms-transform: translateX(100%);
         transform: translateX(100%);
@@ -1280,7 +1143,6 @@ footer p {
     }
     .dropdown-menu {
         display: none;
-
         transition: none;
         transform: none;
     }
@@ -1309,15 +1171,12 @@ footer p {
     }
     .contact-info-table .icon-above {
         display: inline-block;
-
         text-align: right;
     }
     .contact-info-table .icon-above td {
         position: relative;
         right: -100%;
-
         padding-bottom: 0;
-
         -webkit-transform: translateY(100%);
         -ms-transform: translateY(100%);
         transform: translateY(100%);
@@ -1362,8 +1221,44 @@ footer p {
         width: 30px;
         height: 30px;
         margin-left: -15px;
-
         font-size: 1em;
         line-height: 30px;
+    }
+}
+
+t-rainbow .first-link {
+    padding-right: 15px !important;
+}
+
+.first-rainbow .first-link a {
+    margin-left: 0;
+}
+
+
+/* Chevrons */
+
+.first-rainbow .first-link:after {
+    display: none;
+}
+
+.css-flljr {
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 0;
+}
+
+.css-frc {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 3px;
+}
+
+
+}
+@media only screen and (max-width: 1000px) {
+    .timeline-badge, .timeline-badge-after {
+        font-size: 1em;
+        line-height: 30px;
+        width: 30px;
+        height: 30px;
+        margin-left: -15px;
     }
 }
