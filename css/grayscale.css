@@ -1226,33 +1226,6 @@ footer p {
     }
 }
 
-t-rainbow .first-link {
-    padding-right: 15px !important;
-}
-
-.first-rainbow .first-link a {
-    margin-left: 0;
-}
-
-
-/* Chevrons */
-
-.first-rainbow .first-link:after {
-    display: none;
-}
-
-.css-flljr {
-    border-top-right-radius: 3px;
-    border-bottom-left-radius: 0;
-}
-
-.css-frc {
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 3px;
-}
-
-
-}
 @media only screen and (max-width: 1000px) {
     .timeline-badge, .timeline-badge-after {
         font-size: 1em;
