@@ -844,9 +844,7 @@ a:hover, a:focus {
     display: inline-block;
     height: auto;
     margin: auto;
-    margin-right: 0.5em !important;
-    margin-bottom: 2%;
-    margin-left: 0.5em !important;
+    margin: 0.75em;
 }
 
 .sponsorimg.medium {
@@ -858,16 +856,11 @@ a:hover, a:focus {
 }
 
 .sponsorimg.large {
-    margin: 0.25em;
     width: 30%;
 }
 
 .sponsors {
     background-color: #000000;
-}
-
-.sponsorimg {
-    margin: 5px;
 }
 
 .sponsor-class {
