@@ -44,17 +44,10 @@ var events = [];
 var eventPosted = false;
 
 events.push(new event(
-    'MAR District Championship',
-    new Date('Apr, 5, 2017, 8:00:00 GMT-400').getTime(),
-    new Date('Apr, 8, 2017, 18:00:00 GMT-400').getTime(),
-    'https://www.thebluealliance.com/event/2017mrcmp'
-));
-
-events.push(new event(
-    'FIRST Championship (St. Louis)',
-    new Date('Apr, 26, 2017, 8:00:00 GMT-400').getTime(),
-    new Date('Apr, 29, 2017, 18:00:00 GMT-400').getTime(),
-    'https://www.thebluealliance.com/event/2017cmpmo'
+    'Brunswick Eruption',
+    new Date('Nov, 11, 2017, 8:00:00 GMT-400').getTime(),
+    new Date('Nov, 11, 2017, 18:00:00 GMT-400').getTime(),
+    'https://www.thebluealliance.com/event/2017njbe'
 ));
 
 //Sort the events array based on start date
