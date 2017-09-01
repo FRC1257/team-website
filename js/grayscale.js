@@ -13,24 +13,8 @@ function collapseNavbar() {
     }
 }
 
-// jQuery to toggle hamburger menu
-function openHamburgerMenu() {
-    var navBarHeight = $('.navbar').height();
-    var navBarTitleHeight = $('.navbar-brand').outerHeight();
-
-    if(navBarTitleHeight < navBarHeight) {
-        $('.navbar-toggle').css('display', 'block');
-    } else {
-
-    }
-}
-
 $(window).scroll(collapseNavbar);
-$(window).resize(openHamburgerMenu);
-$(document).ready(function() {
-    collapseNavbar();
-    openHamburgerMenu();
-});
+$(document).ready(collapseNavbar);
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
