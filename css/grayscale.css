@@ -14,7 +14,7 @@ body {
     height: 100%;
     color: #fff;
     background-color: #000;
-    webkit-tap-highlight-color: rgba(255, 255, 255, .2);
+    -webkit-tap-highlight-color: rgba(255, 255, 255, .2);
 }
 
 html {
@@ -27,7 +27,7 @@ html {
     transition: all .3s ease-in-out;
     text-transform: uppercase;
     border-radius: 0;
-    font-family: PT Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Quicksand', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
 }
 
@@ -95,7 +95,13 @@ html {
 }
 
 .content-section {
-    padding-top: 100px;
+    margin-top: 25px;
+    padding-top: 75px;
+}
+
+.content-section.picture-bg {
+    margin-top: 75px;
+    padding-top: 25px;
 }
 
  ::-moz-selection {
@@ -137,14 +143,14 @@ img::-moz-selection {
    ============ */
 
 body {
-    font-family: Titillium Web, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Noto Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 35px;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    font-family: PT Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* text-transform: uppercase; */
+    font-family: 'Quicksand', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
 
@@ -188,7 +194,7 @@ a:hover, a:focus {
     text-transform: uppercase;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
     background-color: #000;
-    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .navbar-custom .navbar-brand {
@@ -222,9 +228,14 @@ a:hover, a:focus {
 }
 
 .navbar-custom .nav li a:hover {
-    color: rgba(255, 255, 255, .8);
+    color: rgba(255, 255, 255, .75);
     outline: 0;
     background-color: transparent;
+}
+
+.navbar-custom.top-nav-collapse .nav li a:hover{
+    background: rgba(255, 255, 255, .15);
+    color: white;
 }
 
 .navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
@@ -242,10 +253,6 @@ a:hover, a:focus {
 
 .navbar-custom .nav li.active a:hover {
     color: #fff;
-}
-
-.navbar-nav {
-    font-size: 0.9em;
 }
 
 .navbar-nav li a {
@@ -290,6 +297,28 @@ a:hover, a:focus {
 }
 
 
+.navbar-custom.top-nav-collapse {
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    background: #000;
+}
+
+/* since 3.1.0 */
+.navbar-collapse.collapse.in { 
+    display: block!important;
+}
+.collapsing {
+    overflow: hidden!important;
+}
+.navbar-custom {
+    padding: 20px 0;
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+    letter-spacing: 1px;
+    border-bottom: 0;
+    background: 0 0;
+}
+
 /* ==============
     Intro Section
    ============== */
@@ -303,7 +332,7 @@ a:hover, a:focus {
     padding-top: 100px;
     text-align: center;
     color: #fff;
-    background: url(../img/star_bg.jpg) no-repeat bottom center scroll;
+    background: url("../img/low-poly-galaxy-background.png") no-repeat bottom center scroll;
     background-attachment: fixed;
     -o-background-size: cover;
     background-size: cover;
@@ -337,6 +366,8 @@ a:hover, a:focus {
     -moz-transition-duration: 1s;
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
+    transition-duration: 1s;
+    transition-property: transform;
 }
 
 .btn-circle:hover .glyphicon-menu-down {
@@ -348,6 +379,10 @@ a:hover, a:focus {
     -moz-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 
@@ -376,7 +411,7 @@ a:hover, a:focus {
 .contact-info-table {
     width: 100%;
     text-transform: uppercase;
-    font-family: 'PT Sans', 'Titillium Web', 'Helvetica Neue', sans-serif;
+    font-family: 'Noto Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
 }
 
@@ -387,10 +422,11 @@ a:hover, a:focus {
 
 .contact-info-table a {
     color: white;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .contact-info-table a:hover {
-    text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -833,6 +869,7 @@ a:hover, a:focus {
 
 .banners li, .banners li:after, .banner, .banner:after {
     -webkit-filter: drop-shadow(0 10px 5px rgba(0, 0, 0, .1));
+    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, .1))
 }
 
 
@@ -880,9 +917,9 @@ a:hover, a:focus {
     border: none;
 }
 
-.family-sponsor-table h4 {
+.sponsor-section h4 {
     text-transform: none;
-    font-family: Titillium Web, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Noto Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600;
 }
 
@@ -1063,19 +1100,7 @@ footer p {
     .intro .intro-logo {
         width: 400px;
     }
-    .navbar-custom {
-        padding: 20px 0;
-        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
-        transition: background .5s ease-in-out, padding .5s ease-in-out;
-        letter-spacing: 1px;
-        border-bottom: 0;
-        background: 0 0;
-    }
-    .navbar-custom.top-nav-collapse {
-        padding: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, .3);
-        background: #000;
-    }
+    
 }
 
 @media only screen and (max-width:767px) {
@@ -1111,6 +1136,10 @@ footer p {
         margin: 8px 0;
         padding: 9px 15px;
         border: 1px solid transparent;
+    }
+    .navbar-toggle {
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
     .family-sponsor-table td {
         display: block;
@@ -1153,7 +1182,7 @@ footer p {
     }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 991px) {
     .contact-info-table, .contact-info-table tr, .contact-info-table td {
         text-align: right;
     }
@@ -1186,8 +1215,8 @@ footer p {
         font-size: 14px;
     }
     .navbar-nav li a {
-        padding-right: 5px;
-        padding-left: 5px;
+        margin-right: 15px;
+        margin-left: 15px;
     }
     .first-rainbow .first-link {
         padding-right: 15px !important;
@@ -1206,6 +1235,56 @@ footer p {
     .css-frc {
         border-top-right-radius: 0;
         border-bottom-left-radius: 3px;
+    }
+
+    /* Used to prematurely collapse the navbar 
+    * Reset code found on stackoverflow here:
+    * https://stackoverflow.com/questions/18192082/bootstrap-3-navbar-collapse
+    */
+
+    /* For veritcally centering the button */    
+    .navbar-toggle {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .navbar {
+        background-color: black!important;
+    }
+
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        float:none!important;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 0 -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: block;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    .navbar-nav .dropdown,
+    .navbar-nav .dropdown-toggle {
+        display: none;
     }
 }
 
