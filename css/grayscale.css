@@ -27,7 +27,7 @@ html {
     transition: all .3s ease-in-out;
     text-transform: uppercase;
     border-radius: 0;
-    font-family: PT Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Quicksand', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
 }
 
@@ -137,14 +137,14 @@ img::-moz-selection {
    ============ */
 
 body {
-    font-family: Titillium Web, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Noto Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0 0 35px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-family: PT Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Quicksand', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
 
@@ -188,7 +188,7 @@ a:hover, a:focus {
     text-transform: uppercase;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
     background-color: #000;
-    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .navbar-custom .navbar-brand {
@@ -244,9 +244,9 @@ a:hover, a:focus {
     color: #fff;
 }
 
-.navbar-nav {
+/*.navbar-nav {
     font-size: 0.9em;
-}
+}*/
 
 .navbar-nav li a {
     padding-right: .5em;
@@ -303,7 +303,7 @@ a:hover, a:focus {
     padding-top: 100px;
     text-align: center;
     color: #fff;
-    background: url(../img/star_bg.jpg) no-repeat bottom center scroll;
+    background: url("../img/galaxy-background.svg") no-repeat bottom center scroll;
     background-attachment: fixed;
     -o-background-size: cover;
     background-size: cover;
@@ -376,7 +376,7 @@ a:hover, a:focus {
 .contact-info-table {
     width: 100%;
     text-transform: uppercase;
-    font-family: 'PT Sans', 'Titillium Web', 'Helvetica Neue', sans-serif;
+    font-family: 'Quicksand', 'Helvetica Neue', sans-serif;
     font-size: 14px;
 }
 
@@ -882,7 +882,7 @@ a:hover, a:focus {
 
 .family-sponsor-table h4 {
     text-transform: none;
-    font-family: Titillium Web, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Noto Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600;
 }
 
