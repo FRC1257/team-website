@@ -228,9 +228,14 @@ a:hover, a:focus {
 }
 
 .navbar-custom .nav li a:hover {
-    color: rgba(255, 255, 255, .8);
+    color: rgba(255, 255, 255, .75);
     outline: 0;
     background-color: transparent;
+}
+
+.navbar-custom.top-nav-collapse .nav li a:hover{
+    background: rgba(255, 255, 255, .15);
+    color: white;
 }
 
 .navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
@@ -327,7 +332,7 @@ a:hover, a:focus {
     padding-top: 100px;
     text-align: center;
     color: #fff;
-    background: url("../img/galaxy-background.svg") no-repeat bottom center scroll;
+    background: url("../img/low-poly-galaxy-background.png") no-repeat bottom center scroll;
     background-attachment: fixed;
     -o-background-size: cover;
     background-size: cover;
@@ -400,7 +405,7 @@ a:hover, a:focus {
 .contact-info-table {
     width: 100%;
     text-transform: uppercase;
-    font-family: 'Quicksand', 'Helvetica Neue', sans-serif;
+    font-family: 'Noto Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
 }
 
@@ -411,10 +416,11 @@ a:hover, a:focus {
 
 .contact-info-table a {
     color: white;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .contact-info-table a:hover {
-    text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -1255,7 +1261,7 @@ footer p {
     }
     .navbar-nav {
         float: none!important;
-        margin: 7.5px -15px;
+        margin: 0 -15px;
     }
     .navbar-nav>li {
         float: none;
@@ -1268,6 +1274,14 @@ footer p {
     .navbar-text {
         float: none;
         margin: 15px 0;
+    }
+    .navbar-nav .dropdown,
+    .navbar-nav .dropdown-toggle {
+        display: none;
+    }
+
+    .navbar-custom .nav li a:hover  {
+        background: 
     }
 }
 
