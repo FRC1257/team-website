@@ -332,7 +332,7 @@ a:hover, a:focus {
     padding-top: 100px;
     text-align: center;
     color: #fff;
-    background: url("../img/low-poly-galaxy-background.png") no-repeat bottom center scroll;
+    background: url("../img/galaxy-background.png") no-repeat bottom center scroll;
     background-attachment: fixed;
     -o-background-size: cover;
     background-size: cover;
