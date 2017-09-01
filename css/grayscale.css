@@ -14,7 +14,7 @@ body {
     height: 100%;
     color: #fff;
     background-color: #000;
-    webkit-tap-highlight-color: rgba(255, 255, 255, .2);
+    -webkit-tap-highlight-color: rgba(255, 255, 255, .2);
 }
 
 html {
@@ -366,6 +366,8 @@ a:hover, a:focus {
     -moz-transition-duration: 1s;
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
+    transition-duration: 1s;
+    transition-property: transform;
 }
 
 .btn-circle:hover .glyphicon-menu-down {
@@ -377,6 +379,10 @@ a:hover, a:focus {
     -moz-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 
@@ -863,6 +869,7 @@ a:hover, a:focus {
 
 .banners li, .banners li:after, .banner, .banner:after {
     -webkit-filter: drop-shadow(0 10px 5px rgba(0, 0, 0, .1));
+    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, .1))
 }
 
 
@@ -1278,10 +1285,6 @@ footer p {
     .navbar-nav .dropdown,
     .navbar-nav .dropdown-toggle {
         display: none;
-    }
-
-    .navbar-custom .nav li a:hover  {
-        background: 
     }
 }
 
