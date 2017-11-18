@@ -44,10 +44,18 @@ var events = [];
 var eventPosted = false;
 
 events.push(new event(
-    'Brunswick Eruption',
-    new Date('Nov, 11, 2017, 8:00:00 GMT-400').getTime(),
-    new Date('Nov, 11, 2017, 18:00:00 GMT-400').getTime(),
-    'https://www.thebluealliance.com/event/2017njbe'
+    'Hatboro-Horsham Event',
+    new Date('Mar, 2, 2018, 8:00:00 GMT-400').getTime(),
+    new Date('Mar, 4, 2018 18:00:00 GMT-400').getTime(),
+    'https://www.thebluealliance.com/event/2018pahat'
+));
+
+
+events.push(new event(
+    'Bridgewater-Raritan Event',
+    new Date('Mar, 16, 2018, 8:00:00 GMT-400').getTime(),
+    new Date('Mar, 18, 2018, 18:00:00 GMT-400').getTime(),
+    'https://www.thebluealliance.com/event/2018njbri'
 ));
 
 //Sort the events array based on start date
