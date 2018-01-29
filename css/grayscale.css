@@ -1307,3 +1307,8 @@ footer p {
         margin-left: -15px;
     }
 }
+
+.dropdown-menu {
+    min-width: 195px;
+    max-width: 195px;
+}
