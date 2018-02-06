@@ -900,6 +900,10 @@ a:hover, a:focus {
     width: 40%;
 }
 
+.sponsorimg.image {
+    width: 20%;
+}
+
 .sponsors {
     background-color: #000000;
 }
