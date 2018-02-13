@@ -904,6 +904,10 @@ a:hover, a:focus {
     width: 25%;
 }
 
+#families {
+    width: 60%
+}
+
 .sponsors {
     background-color: #000000;
 }
@@ -913,7 +917,7 @@ a:hover, a:focus {
 }
 
 .sponsor-section {
-    margin-bottom: 100px;
+    margin-bottom: 75px;
 }
 
 .sponsor-section:last-child {
