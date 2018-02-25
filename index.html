@@ -1,557 +1,737 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="All about Team 1257, an FRC / FIRST Robotics Team promoting STEM and other tech via learning & demonstration.">
-        <meta name="author" content="Team 1257 | Parallel Universe">
-        <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-        <title>Team 1257 | Parallel Universe</title>
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom CSS -->
-        <link href="css/grayscale.css" rel="stylesheet">
-        <!-- Custom Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Quicksand:300,400" rel="stylesheet">
-        <!--Team Standard Fonts (LOOK IN GDRIVE FOR CURRENT STANDARD) -->
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="All about Team 1257, an FRC / FIRST Robotics Team promoting STEM and other tech via learning & demonstration.">
+    <meta name="author" content="Team 1257 | Parallel Universe">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Team 1257 | Parallel Universe</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Quicksand:300,400" rel="stylesheet">
+    <!--Team Standard Fonts (LOOK IN GDRIVE FOR CURRENT STANDARD) -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-        <script>
-            (function(i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function() {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-            ga('create', 'UA-83855346-1', 'auto');
-            ga('send', 'pageview');
-        </script>
-    </head>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-83855346-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
 
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-        <!-- Navigation -->
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <span class="light">Team</span> 1257
+                    <span class="light"> | Parallel Universe</span>
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#impact">Impact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#history">History</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#robots">Robots</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#first">FIRST</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#awards">Awards</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#sponsors">Sponsors</a>
+                    </li>
+                    <!-- Social Media Dropdowns -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Social
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/FRC1257/">Facebook</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://twitter.com/frc1257">Twitter</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.youtube.com/channel/UCK6a6LUyBleiUrKwQeNZN_Q">YouTube</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="mailto:paralleluniverse@team1257.org">Email</a>
+                            </li>
+                            <li>
+                                <a id="blueAll" target="_blank" href="https://www.thebluealliance.com/team/1257">The Blue Alliance</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://us14.campaign-archive.com/home/?u=7477ee9861238897576ea36f4&id=e0ac93aa71">Newsletter</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <img class="intro-logo img-responsive" src="./img/snail full white version.svg" alt="Team 1257 Logo">
             <div class="container">
-                <div class="navbar-header"> 
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top"> <span class="light">Team</span> 1257<span class="light"> | Parallel Universe</span> </a>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                        <li class="hidden">
-                            <a href="#page-top"></a>
-                        </li>
-                        <li> <a class="page-scroll" href="#about">About</a> </li>
-                        <li> <a class="page-scroll" href="#impact">Impact</a> </li>
-                        <li> <a class="page-scroll" href="#history">History</a> </li>
-                        <li> <a class="page-scroll" href="#robots">Robots</a> </li>
-                        <li> <a class="page-scroll" href="#first">FIRST</a> </li>
-                        <li> <a class="page-scroll" href="#awards">Awards</a> </li>
-                        <li> <a class="page-scroll" href="#sponsors">Sponsors</a> </li>
-                        <!-- Social Media Dropdown -->
-                        <li class="dropdown"> 
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Social <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a target="_blank" href="https://www.facebook.com/FRC1257/">Facebook</a></li>
-                                <li><a target="_blank" href="https://twitter.com/frc1257">Twitter</a></li>
-                                <li><a target="_blank" href="https://www.youtube.com/channel/UCK6a6LUyBleiUrKwQeNZN_Q">YouTube</a></li>
-                                <li><a target="_blank" href="mailto:paralleluniverse@team1257.org">Email</a></li>
-                                <li><a id="blueAll"target="_blank" href="https://www.thebluealliance.com/team/1257">The Blue Alliance</a></li>
-                                <li><a target="_blank" href="http://eepurl.com/daK-wD">Newsletter</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                <div class="col-md-8 col-md-offset-2">
+                    <p class="intro-text">A robotics team dedicated to spreading the values of FRC and promoting STEM</p>
+                    <a href="#about" class="btn btn-circle page-scroll">
+                        <span class=" glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                    </a>
                 </div>
             </div>
-        </nav>
-        <!-- Intro Header -->
-        <header class="intro">
-            <div class="intro-body"> 
-                <img class="intro-logo img-responsive" src="./img/snail full white version.svg" alt="Team 1257 Logo">
-                <div class="container">
-                    <div class="col-md-8 col-md-offset-2">
-                        <p class="intro-text">A robotics team dedicated to spreading the values of FRC and promoting STEM</p>
-                        <a href="#about" class="btn btn-circle page-scroll"> <span class=" glyphicon glyphicon-menu-down" aria-hidden="true"></span> </a>
+        </div>
+    </header>
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2>About Our Team</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-md-7">
+                        <p class="team-about">Team 1257 Parallel Universe is an unparalleled FIRST team that strives to inspire passion for STEM.
+                            We design and fabricate robots for the FIRST Robotics Competition (FRC) in order to develop talent
+                            in STEM and prepare a new generation of innovators, leaders, and entrepreneurs. Our aspiration
+                            is to create a community excited about STEM at the Union County Vocational-Technical Schools
+                            and beyond through FRC and our community outreach programs. We aim to create an environment where
+                            teamwork fuels creative problem solving. </p>
+                    </div>
+                    <div class="col-xs-12 col-md-5">
+                        <table class="table contact-info-table">
+                            <thead>
+                                <tr>
+                                    <td class="table-title">Team 1257 Contact Info</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="icon-above">
+                                    <td class="home-icon">
+                                        <span class="glyphicon glyphicon-home"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Mancuso Hall
+                                        <br>
+                                        <a target="_blank" href="https://www.google.com/maps/place/1776+Raritan+Rd,+Scotch+Plains,+NJ+07076/@40.6170481,-74.3601457,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3b129cd68334d:0x25655629042004cd!8m2!3d40.617044!4d-74.357957">1776 Raritan Road
+                                            <br>Scotch Plains, NJ 07076-2997</a>
+                                    </td>
+                                </tr>
+                                <tr class="icon-above">
+                                    <td>
+                                        <span class="glyphicon glyphicon-envelope"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="mailto:paralleluniverse@team1257.org">ParallelUniverse@team1257.org</a>
+                                    </td>
+                                </tr>
+                                <tr class="icon-above">
+                                    <td>
+                                        <span class="glyphicon glyphicon-earphone"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>+01-929-500-1257</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-        </header>
-        <!-- About Section -->
-        <section id="about" class="container content-section text-center">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>About Our Team</h2>
-                    <div class="row">
-                        <div class="col-xs-12 col-md-7">
-                            <p class="team-about">Team 1257 Parallel Universe is an unparalleled FIRST team that strives to inspire passion for STEM. We design and fabricate robots for the FIRST Robotics Competition (FRC) in order to develop talent in STEM and prepare a new
-                                generation of innovators, leaders, and entrepreneurs. Our aspiration is to create a community excited about STEM at the Union County Vocational-Technical Schools and beyond through FRC and our community outreach programs.
-                                We aim to create an environment where teamwork fuels creative problem solving. </p>
+        </div>
+    </section>
+    <!-- Impact Section -->
+    <section id="impact" class="content-section text-center">
+        <div class="impact-section">
+            <div class="container">
+                <div class="col-lg-10 col-lg-offset-1 first-text">
+                    <h2>Impact</h2>
+                    <p>Over the years, Team 1257 has sought to leave the best impression on our students, both in competition,
+                        and in their own lives. We pride ourselves in going above and beyond, and trying to help those in
+                        need. In fact, by loading this page, you are contributing to the folding of proteins to try and find
+                        cures for degenerative diseases!</p>
+                    <iframe src="http://folding.stanford.edu/nacl/micro.html?team=231651&fg=8BC441&bg=4d0b39"
+                        scrolling="no" frameBorder="0" width="132" height="68" style="float:center"></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- Timeline Section -->
+        <section id="history" class="content-section text-center">
+            <div class="container">
+                <h2>History</h2>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-badge">
+                            <span class="glyphicon glyphicon-check"></span>
                         </div>
-                        <div class="col-xs-12 col-md-5">
-                            <table class="table contact-info-table">
-                                <thead>
-                                    <tr>
-                                        <td class="table-title">Team 1257 Contact Info</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="icon-above">
-                                        <td class="home-icon"><span class="glyphicon glyphicon-home"></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mancuso Hall<br><a target="_blank" href="https://www.google.com/maps/place/1776+Raritan+Rd,+Scotch+Plains,+NJ+07076/@40.6170481,-74.3601457,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3b129cd68334d:0x25655629042004cd!8m2!3d40.617044!4d-74.357957">1776 Raritan Road<br>Scotch Plains, NJ 07076-2997</a></td>
-                                    </tr>
-                                    <tr class="icon-above">
-                                        <td><span class="glyphicon glyphicon-envelope"></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><a href="mailto:paralleluniverse@team1257.org">ParallelUniverse@team1257.org</a></td>
-                                    </tr>
-                                    <tr class="icon-above">
-                                        <td><span class="glyphicon glyphicon-earphone"></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>+01-929-500-1257</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="timeline-panel">
+                            <h4 class="timeline-title">2004</h4>
+                            <div class="timeline-body">
+                                <p>Team Founded</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge">
+                            <span class="glyphicon glyphicon-check"></span>
+                        </div>
+                        <div class="timeline-panel">
+                            <h4 class="timeline-title">2006</h4>
+                            <div class="timeline-body">
+                                <p>Team Dissolved</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-badge-after">
+                            <span class="glyphicon glyphicon-check"></span>
+                        </div>
+                        <div class="timeline-panel">
+                            <h4 class="timeline-title">2009</h4>
+                            <div class="timeline-body">
+                                <p>Team Reformed</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge-after">
+                            <span class="glyphicon glyphicon-check"></span>
+                        </div>
+                        <div class="timeline-panel">
+                            <h4 class="timeline-title">2014 - Winning Clifton</h4>
+                            <div class="timeline-body">
+                                <p>FIRST Time at MAR Championship</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-badge-after">
+                            <span class="glyphicon glyphicon-check"></span>
+                        </div>
+                        <div class="timeline-panel">
+                            <h4 class="timeline-title">2015 - North Brunswick</h4>
+                            <div class="timeline-body">
+                                <p>Winning Team Spirit - Shows Growth</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge-after">
+                            <span class="glyphicon glyphicon-check"></span>
+                        </div>
+                        <div class="timeline-panel">
+                            <h4 class="timeline-title">2016 - Breaking Records</h4>
+                            <div class="timeline-body">
+                                <p>
+                                    <strong>
+                                        <em>MAR District Championships Event Winner</em>
+                                    </strong>
+                                </p>
+                                <p>Mount Olive Event Winner</p>
+                                <p>Bridgewater Finalist & Gracious Professionalism Award</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline">
+                        <div class="timeline-badge-after">
+                            <span class="glyphicon glyphicon-check"></span>
+                        </div>
+                        <div class="timeline-panel">
+                            <h4 class="timeline-title">2016 - World Championship</h4>
+                            <div class="timeline-body">
+                                <p>Archimedes Subdivision Semifinalist!</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!--Countdown Timer-->
+                <div class="counter">
+                    <h4 class="countdown-title timeline-title">Making Team History</h4>
+                    <!--All dynamically added by the js-->
+                    <h3 id="nextevent"></h3>
+                    <div id="countdown"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Robots Section -->
+        <section id="robots" class="content-section picture-bg text-center">
+            <div class="robots-section">
+                <div class="container">
+                    <div class="col-lg-10 col-lg-offset-1 robot-text">
+                        <h2>Our Robots</h2>
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="5000">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+
+                                <div class="item active">
+                                    <img class="robotimg" alt="Pneumatic Lemur (2017)" title="Pneumatic Lemur" src="./img/robots/robot2017.jpg"
+                                    />
+                                    <div class="carousel-caption">
+                                        <h3>2017</h3>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <img class="robotimg" alt="Electric Weasel (2016)" title="Electric Weasel" src="./img/robots/electric_weasel.jpg"
+                                    />
+                                    <div class="carousel-caption">
+                                        <h3>2016</h3>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="robotimg" alt="Electric Weasel (2016)" title="Electric Weasel" src="./img/robots/wallbot.jpg"
+                                    />
+                                    <div class="carousel-caption">
+                                        <h3>2016</h3>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="robotimg" alt="Planck (2015)" title="Planck" src="./img/robots/team_1257_stacking.jpg"
+                                    />
+                                    <div class="carousel-caption">
+                                        <h3>2015</h3>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="robotimg" alt="Clapping Cymbal Monkey (2014)" title="Clapping Cymbal Monkey"
+                                        src="./img/robots/DSC_2425.JPG" />
+                                    <div class="carousel-caption">
+                                        <h3>2014</h3>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="robotimg" alt="Hanging Around" title="Hanging Around" src="./img/robots/2013_hanging.jpg"
+                                    />
+                                    <div class="carousel-caption">
+                                        <h3>2013</h3>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="robotimg" alt="Honey Badger" title="Honey Badger" src="./img/robots/2012_bot.jpg"
+                                    />
+                                    <div class="carousel-caption">
+                                        <h3>2012</h3>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="robotimg" alt="The Claw (2011)" title="The Claw" src="./img/robots/2011_robot.jpg"
+                                    />
+                                    <div class="carousel-caption">
+                                        <h3>2011</h3>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img class="robotimg" alt="2004 Robot" title="2004 Robot" src="./img/robots/2004_robot.jpg"
+                                    />
+                                    <div class="carousel-caption">
+                                        <h3>2004</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Impact Section -->
-        <section id="impact" class="content-section text-center">
-            <div class="impact-section">
+        <!-- FIRST Section -->
+        <section id="first" class="content-section text-center">
+            <div class="first-section">
                 <div class="container">
                     <div class="col-lg-10 col-lg-offset-1 first-text">
-                        <h2>Impact</h2>
-                        <p>Over the years, Team 1257 has sought to leave the best impression on our students, both in competition, and in their own lives. We pride ourselves in going above and beyond, and trying to help those in need. In fact, by loading
-                            this page, you are contributing to the folding of proteins to try and find cures for degenerative diseases!</p> <iframe src="http://folding.stanford.edu/nacl/micro.html?team=231651&fg=8BC441&bg=4d0b39" scrolling="no" frameBorder="0"
-                            width="132" height="68" style="float:center"></iframe> </div>
+                        <h2>About FIRST</h2>
+                        <p>
+                            <img class="group img-first1" src="./img/frc/FIRST_logo.png" alt="FRC Logo">
+                            <i>FIRST</i> is an international, not-for-profit organization that was founded in 1989 in Manchester,
+                            NH.
+                            <i>FIRST</i> had goals to inspire younger people to become interested in STEM. The organization
+                            currently has four programs that support their goal. </p>
+                        <p> The main mission of
+                            <i>FIRST</i> is to inspire interest in STEM. They also emphasize innovation, teamwork, leadership,
+                            communication, confidence, and pursuing education and opportunities. These skills help prepare
+                            young people for the job opportunities that have been rapidly increasing recently. </p>
+                        <p>
+                            <img class="group img-first2" src="./img/frc/FIRSTRobotics_IconVert_RGB.png" alt="FRC Logo"> The four programs that
+                            <i>FIRST</i> has are,
+                            <i>FIRST</i> LEGO League (Jr. FLL and FLL),
+                            <i>FIRST</i> Tech Challenge (FTC), and the
+                            <i>FIRST</i> Robotics Competition (FRC). Team 1257 is a
+                            <i>FIRST</i> Robotics Competition (FRC) team. Every year, thousands of teams come up with a unique
+                            solution to the game of the year. Teams design, build, test, and compete with their unique game
+                            solution every year. They compete in local, regional, and even world competitions. </p>
+                    </div>
+                    <div class="first-rainbow col-lg-10 col-lg-offset-1">
+                        <div class="first-link col-md-3 css-flljr">
+                            <a href="http://www.firstinspires.org/robotics/flljr" target="_blank">
+                                <em class="first-word">FIRST</em>
+                                <sup>&reg;</sup>Lego
+                                <sup>&reg;</sup>League Jr.</a>
+                        </div>
+                        <div class="first-link col-md-3 css-fll">
+                            <a href="http://www.firstinspires.org/robotics/fll" target="_blank">
+                                <em class="first-word">FIRST</em>
+                                <sup>&reg;</sup>Lego
+                                <sup>&reg;</sup>League</a>
+                        </div>
+                        <div class="first-link col-md-3 css-ftc">
+                            <a href="http://www.firstinspires.org/robotics/ftc" target="_blank">
+                                <em class="first-word">FIRST</em>
+                                <sup>&reg;</sup>Tech Challenge</a>
+                        </div>
+                        <div class="first-link col-md-3 css-frc">
+                            <a href="http://www.firstinspires.org/robotics/frc" target="_blank">
+                                <em class="first-word">FIRST</em>
+                                <sup>&reg;</sup>Robotics Competition</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Timeline Section -->
-            <section id="history" class="content-section text-center">
+        </section>
+        <!--Awards Section-->
+        <section id="awards" class="content-section picture-bg text-center">
+            <div class="awards-section">
                 <div class="container">
-                    <h2>History</h2>
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-badge"><span class="glyphicon glyphicon-check"></span></div>
-                            <div class="timeline-panel">
-                                <h4 class="timeline-title">2004</h4>
-                                <div class="timeline-body">
-                                    <p>Team Founded</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-badge"><span class="glyphicon glyphicon-check"></span></div>
-                            <div class="timeline-panel">
-                                <h4 class="timeline-title">2006</h4>
-                                <div class="timeline-body">
-                                    <p>Team Dissolved</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-badge-after"><span class="glyphicon glyphicon-check"></span></div>
-                            <div class="timeline-panel">
-                                <h4 class="timeline-title">2009</h4>
-                                <div class="timeline-body">
-                                    <p>Team Reformed</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-badge-after"><span class="glyphicon glyphicon-check"></span></div>
-                            <div class="timeline-panel">
-                                <h4 class="timeline-title">2014 - Winning Clifton</h4>
-                                <div class="timeline-body">
-                                    <p>FIRST Time at MAR Championship</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-badge-after"><span class="glyphicon glyphicon-check"></span></div>
-                            <div class="timeline-panel">
-                                <h4 class="timeline-title">2015 - North Brunswick</h4>
-                                <div class="timeline-body">
-                                    <p>Winning Team Spirit - Shows Growth</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-badge-after"><span class="glyphicon glyphicon-check"></span></div>
-                            <div class="timeline-panel">
-                                <h4 class="timeline-title">2016  - Breaking Records</h4>
-                                <div class="timeline-body">
-                                    <p><strong><em>MAR District Championships Event Winner</em></strong></p>
-                                    <p>Mount Olive Event Winner</p>
-                                    <p>Bridgewater Finalist & Gracious Professionalism Award</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline">
-                            <div class="timeline-badge-after"><span class="glyphicon glyphicon-check"></span></div>
-                            <div class="timeline-panel">
-                                <h4 class="timeline-title">2016 - World Championship</h4>
-                                <div class="timeline-body">
-                                    <p>Archimedes Subdivision Semifinalist!</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <!--Countdown Timer-->
-                    <div class="counter">
-                        <h4 class="countdown-title timeline-title">Making Team History</h4>
-                        <!--All dynamically added by the js-->
-                        <h3 id="nextevent"></h3>
-                        <div id="countdown"></div>
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <h2 class="awards-title">Our Awards</h2>
+                        <p>Awards and Honors. Take a look at what we've done, and how far we've come below!</p>
+                        <ul class="banners">
+                            <li>
+                                <img src="img/FIRST_logo.png">2016
+                                <br>Mid-Atlantic Robotics Mount Olive Winner</li>
+                            <li>
+                                <img src="img/FIRST_logo.png">2016
+                                <br>Mid-Atlantic Robotics District Championship Winner</li>
+                            <li>
+                                <img src="img/FIRST_logo.png">2014
+                                <br>Mid-Atlantic Robotics Clifton
+                                <br>Winner</li>
+                        </ul>
+                        <table class="table awards-table">
+                            <thead>
+                                <tr>
+                                    <th>Year</th>
+                                    <th>Event</th>
+                                    <th>Awards</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2017</td>
+                                    <td>
+                                        <a href="http://www.thebluealliance.com/event/2017njbri" target="_blank">MAR District - Bridgewater-Raritan Event</a>
+                                    </td>
+                                    <td>Entrepreneurship Award sponsored by Kleiner Perkins Caufield and Byers</td>
+                                </tr>
+                                <tr>
+                                    <td>2017</td>
+                                    <td>
+                                        <a href="http://www.thebluealliance.com/event/2017pahat" target="_blank">MAR District - Hatboro-Horsham Event</a>
+                                    </td>
+                                    <td>Excellence in Engineering Sponsored By Delphi</td>
+                                </tr>
+                                <tr>
+                                    <td>2016</td>
+                                    <td>
+                                        <a href="http://www.thebluealliance.com/event/2016arc" target="_blank">FRC World Championship - Archimedes</a>
+                                    </td>
+                                    <td>Semifinalist</td>
+                                </tr>
+                                <tr>
+                                    <td>2016</td>
+                                    <td>
+                                        <a href="http://www.thebluealliance.com/event/2016mrcmp" target="_blank">MAR District - Championships</a>
+                                    </td>
+                                    <td>Winner</td>
+                                </tr>
+                                <tr>
+                                    <td>2016</td>
+                                    <td>
+                                        <a href="http://www.thebluealliance.com/event/2016mrcmp" target="_blank">MAR District - Bridgewater / Raritan Event</a>
+                                    </td>
+                                    <td>District Event Finalist</td>
+                                </tr>
+                                <tr>
+                                    <td>2016</td>
+                                    <td>
+                                        <a href="http://www.thebluealliance.com/event/2016mrcmp" target="_blank">MAR District - Bridgewater / Raritan Event</a>
+                                    </td>
+                                    <td>1st Seed Alliance Captain</td>
+                                </tr>
+                                <tr>
+                                    <td>2016</td>
+                                    <td>
+                                        <a href="http://www.thebluealliance.com/event/2016mrcmp" target="_blank">MAR District - Bridgewater / Raritan Event</a>
+                                    </td>
+                                    <td>Gracious Professionalism Award</td>
+                                </tr>
+                                <tr>
+                                    <td>2016</td>
+                                    <td>
+                                        <a href="https://www.thebluealliance.com/event/2016njfla" target="_blank">MAR District - Mount Olive Event</a>
+                                    </td>
+                                    <td>District Event Winner and Alliance Captain</td>
+                                </tr>
+                                <tr>
+                                    <td>2015</td>
+                                    <td>
+                                        <a href="https://www.thebluealliance.com/event/2015njfla" target="_blank">MAR District - Mount Olive Event</a>
+                                    </td>
+                                    <td>Industrial Safety Award sponsored by Underwriters Labratories</td>
+                                </tr>
+                                <tr>
+                                    <td>2015</td>
+                                    <td>
+                                        <a href="https://www.thebluealliance.com/event/2015njnbr" target="_blank">MAR District - North Brunswick Event</a>
+                                    </td>
+                                    <td>District Event Finalist</td>
+                                </tr>
+                                <tr>
+                                    <td>2015</td>
+                                    <td>
+                                        <a href="https://www.thebluealliance.com/event/2015njnbr" target="_blank">MAR District - North Brunswick Event</a>
+                                    </td>
+                                    <td>Industrial Safety Award sponsored by Underwriters Labratories</td>
+                                </tr>
+                                <tr>
+                                    <td>2015</td>
+                                    <td>
+                                        <a href="https://www.thebluealliance.com/event/2015njnbr" target="_blank">MAR District - North Brunswick Event</a>
+                                    </td>
+                                    <td>Team Spirit Award sponsored by Chrysler</td>
+                                </tr>
+                                <tr>
+                                    <td>2014</td>
+                                    <td>
+                                        <a href="https://www.thebluealliance.com/event/2014njcli" target="_blank">MAR District - Clifton Event</a>
+                                    </td>
+                                    <td>District Event Winner</td>
+                                </tr>
+                                <tr>
+                                    <td>2013</td>
+                                    <td>
+                                        <a href="https://www.thebluealliance.com/event/2013njewn" target="_blank">TCNJ FIRST Robotics District Competition</a>
+                                    </td>
+                                    <td>Industrial Safety Award sponsored by Underwriters Labratories</td>
+                                </tr>
+                                <tr>
+                                    <td>2010</td>
+                                    <td>
+                                        <a href="https://www.thebluealliance.com/event/2010nj" target="_blank">New Jersey Regional</a>
+                                    </td>
+                                    <td>Industrial Safety Award sponsored by Underwriters Labratories</td>
+                                </tr>
+                                <tr>
+                                    <td>2005</td>
+                                    <td>
+                                        <a href="https://www.thebluealliance.com/event/2005md" target="_blank">Chesapeake Regional</a>
+                                    </td>
+                                    <td>Engineering Inspiration Award</td>
+                                </tr>
+                                <tr>
+                                    <td>2005</td>
+                                    <td>
+                                        <a href="https://www.thebluealliance.com/event/2005ny" target="_blank">New York City Regional</a>
+                                    </td>
+                                    <td>Autodesk Visualization Award</td>
+                                </tr>
+                                <tr>
+                                    <td>2005</td>
+                                    <td>
+                                        <a href="https://www.thebluealliance.com/event/2005ny" target="_blank">New York City Regional</a>
+                                    </td>
+                                    <td>Xerox Creativity Award</td>
+                                </tr>
+                                <tr>
+                                    <td>2004</td>
+                                    <td>
+                                        <a href="https://www.thebluealliance.com/event/2004md" target="_blank">Chesapeake Regional</a>
+                                    </td>
+                                    <td>Rookie Inspiration Award</td>
+                                </tr>
+                                <tr>
+                                    <td>2004</td>
+                                    <td>
+                                        <a href="https://www.thebluealliance.com/event/2004nj" target="_blank">New Jersey Regional</a>
+                                    </td>
+                                    <td>DaimlerChrysler Team Spirit Award</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-            </section>
-            <!-- Robots Section -->
-            <section id="robots" class="content-section picture-bg text-center">
-                <div class="robots-section">
-                    <div class="container">
-                        <div class="col-lg-10 col-lg-offset-1 robot-text">
-                            <h2>Our Robots</h2>
-                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="5000">
-                                <!-- Indicators -->
-                                <ol class="carousel-indicators">
-                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="8"></li>
-                                </ol>
-                                <!-- Wrapper for slides -->
-                                <div class="carousel-inner">
-                                    
-                                    <div class="item active"> <img class="robotimg" alt="Pneumatic Lemur (2017)" title="Pneumatic Lemur" src="./img/robots/robot2017.jpg" />
-                                        <div class="carousel-caption">
-                                            <h3>2017</h3> </div>
-                                    </div>
-                                
-                                    <div class="item"> <img class="robotimg" alt="Electric Weasel (2016)" title="Electric Weasel" src="./img/robots/electric_weasel.jpg" />
-                                        <div class="carousel-caption">
-                                            <h3>2016</h3> </div>
-                                    </div>
-                                    <div class="item"> <img class="robotimg" alt="Electric Weasel (2016)" title="Electric Weasel" src="./img/robots/wallbot.jpg" />
-                                        <div class="carousel-caption">
-                                            <h3>2016</h3> </div>
-                                    </div>
-                                    <div class="item"> <img class="robotimg" alt="Planck (2015)" title="Planck" src="./img/robots/team_1257_stacking.jpg" />
-                                        <div class="carousel-caption">
-                                            <h3>2015</h3> </div>
-                                    </div>
-                                    <div class="item"> <img class="robotimg" alt="Clapping Cymbal Monkey (2014)" title="Clapping Cymbal Monkey" src="./img/robots/DSC_2425.JPG" />
-                                        <div class="carousel-caption">
-                                            <h3>2014</h3> </div>
-                                    </div>
-                                    <div class="item"> <img class="robotimg" alt="Hanging Around" title="Hanging Around" src="./img/robots/2013_hanging.jpg" />
-                                        <div class="carousel-caption">
-                                            <h3>2013</h3> </div>
-                                    </div>
-                                    <div class="item"> <img class="robotimg" alt="Honey Badger" title="Honey Badger" src="./img/robots/2012_bot.jpg" />
-                                        <div class="carousel-caption">
-                                            <h3>2012</h3> </div>
-                                    </div>
-                                    <div class="item"> <img class="robotimg" alt="The Claw (2011)" title="The Claw" src="./img/robots/2011_robot.jpg" />
-                                        <div class="carousel-caption">
-                                            <h3>2011</h3> </div>
-                                    </div>
-                                    <div class="item"> <img class="robotimg" alt="2004 Robot" title="2004 Robot" src="./img/robots/2004_robot.jpg" />
-                                        <div class="carousel-caption">
-                                            <h3>2004</h3> </div>
-                                    </div>
-                                </div>
-                                <!-- Controls -->
-                                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
-                                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
-                            </div>
-                        </div>
+            </div>
+        </section>
+        <!--Sponsors Section-->
+        <section id="sponsors" class="content-section text-center">
+            <div class="sponsors">
+                <div class="container">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <h2>Our Sponsors</h2>
+                        <section class="sponsor-section">
+                            <h3 class="sponsor-class">Platinum</h3>
+                            <a target="_blank" href="http://www.ucvts.tec.nj.us/">
+                                <img class="sponsorimg large" title="Union County Vocational Technical Schools" alt="UCVTS" src="./img/sponsors/17_18/Platinum/UCVTS.svg"
+                                />
+                            </a>
+                            <a target="_blank" href="http://www.pica.army.mil/">
+                                <img class="sponsorimg large" title="Picatinny Arsenal" alt="Picatinny Arsenal" src="./img/sponsors/17_18/Platinum/Picatinny_STEM.svg"
+                                />
+                            </a>
+                            <br>
+                            <a target="_blank" href="http://www.utc.com/">
+                                <img class="sponsorimg large" title="United Technologies Corporation" alt="UTC" src="./img/sponsors/17_18/Platinum/UTC.svg"
+                                />
+                            </a>
+                            <a target="_blank" href="http://www.te.com/usa-en/home.html">
+                                <img class="sponsorimg large" title="TE Connectivity" alt="TE Connectivity" src="./img/sponsors/17_18/Platinum/TE_Connectivity.svg"
+                                />
+                            </a>
+                        </section>
+                        <section class="sponsor-section">
+                            <h3 class="sponsor-class">Gold</h3>
+                            <a target="_blank" href="https://www.google.com/">
+                                <img class="sponsorimg medium" title="Google" alt="Google" src="./img/sponsors/17_18/Gold/Google.svg"
+                                />
+                            </a>
+                            <a target="_blank" href="http://www.merck.com/index.html">
+                                <img class="sponsorimg medium" title="Merck" alt="Merck" src="./img/sponsors/17_18/Gold/Merck.svg"
+                                />
+                            </a>
+                            
+                        </section>
+                        <section class="sponsor-section">
+                            <h3 class="sponsor-class">Silver</h3>
+                            <a target="_blank" href="http://www.merck.com/index.html">
+                                <img class="sponsorimg medium" title="Formlabs" alt="Formlabs" src="./img/sponsors/17_18/Silver/Formlabs.svg"
+                                />
+                            </a>
+                        </section>
+                        <section class="sponsor-section">
+                            <h3 class="sponsor-class">Bronze</h3>
+                            <a target="_blank" href="http://www.2kprinting.com/">
+                                <img class="sponsorimg small" title="2K Printing" alt="2K Printing" src="./img/sponsors/17_18/bronze/2K_Printing_White_Stroke_Version.png"
+                                />
+                            </a>
+                            <a target="_blank" href="http://www.thebikestand.com/">
+                                <img class="sponsorimg small" title="The Bike Stand" alt="The Bike Stand" src="./img/sponsors/17_18/bronze/The_Bike_Stand_Logo.png"
+                                />
+                            </a>
+                            
+                            <br>
+                            <img class="sponsorimg image" title="The Matlin and Tong Family" alt="The Matlin and Tong Family" src="./img/sponsors/17_18/bronze/Bronze_Families.svg"
+                            />
+                        </section>
+                        <section class="sponsor-section">
+                            <h3 class="sponsor-class">Friends</h3>
+                            <img src="./img/sponsors/17_18/Friend_Families.svg" alt="Families" title="Families" class="sponsorimg image" id="families">
+                        </section>
                     </div>
                 </div>
-            </section>
-            <!-- FIRST Section -->
-            <section id="first" class="content-section text-center">
-                <div class="first-section">
-                    <div class="container">
-                        <div class="col-lg-10 col-lg-offset-1 first-text">
-                            <h2>About FIRST</h2>
-                            <p> <img class="group img-first1" src="./img/frc/FIRST_logo.png" alt="FRC Logo"> <i>FIRST</i> is an international, not-for-profit organization that was founded in 1989 in Manchester, NH. <i>FIRST</i> had goals to inspire younger
-                                people to become interested in STEM. The organization currently has four programs that support their goal. </p>
-                            <p> The main mission of <i>FIRST</i> is to inspire interest in STEM. They also emphasize innovation, teamwork, leadership, communication, confidence, and pursuing education and opportunities. These skills help prepare young people
-                                for the job opportunities that have been rapidly increasing recently. </p>
-                            <p> <img class="group img-first2" src="./img/frc/FIRSTRobotics_IconVert_RGB.png" alt="FRC Logo"> The four programs that <i>FIRST</i> has are, <i>FIRST</i> LEGO League (Jr. FLL and FLL), <i>FIRST</i> Tech Challenge (FTC), and the
-                                <i>FIRST</i> Robotics Competition (FRC). Team 1257 is a <i>FIRST</i> Robotics Competition (FRC) team. Every year, thousands of teams come up with a unique solution to the game of the year. Teams design, build, test, and
-                                compete with their unique game solution every year. They compete in local, regional, and even world competitions. </p>
-                        </div>
-                        <div class="first-rainbow col-lg-10 col-lg-offset-1">
-                            <div class="first-link col-md-3 css-flljr"><a href="http://www.firstinspires.org/robotics/flljr" target="_blank"><em class="first-word">FIRST</em>&reg; Lego&reg; League Jr.</a></div>
-                            <div class="first-link col-md-3 css-fll"><a href="http://www.firstinspires.org/robotics/fll" target="_blank"><em class="first-word">FIRST</em>&reg; Lego&reg; League</a></div>
-                            <div class="first-link col-md-3 css-ftc"><a href="http://www.firstinspires.org/robotics/ftc" target="_blank"><em class="first-word">FIRST</em>&reg; Tech Challenge</a></div>
-                            <div class="first-link col-md-3 css-frc"><a href="http://www.firstinspires.org/robotics/frc" target="_blank"><em class="first-word">FIRST</em>&reg; Robotics Competition</a></div>
-                        </div>
-                    </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div class="container text-center">
+                <p>Copyright Team 1257 | Made with
+                    <span class="glyphicon glyphicon-heart" aria-hidden="true" style="color:#A94442"></span>
+                </p>
+                <div class="social-media-links">
+                    <a class="btn btn-circle" target="_blank" href="https://www.facebook.com/FRC1257/">
+                        <img src="./img/social-icons/facebook-xxl.png" alt="Team 1257 Facebook" title="Team 1257 Facebook">
+                    </a>
+                    <a class="btn btn-circle" target="_blank" href="https://twitter.com/frc1257">
+                        <img src="./img/social-icons/twitter-512.png" alt="Team 1257 Twitter" title="Team 1257 Twitter">
+                    </a>
+                    <a class="btn btn-circle" target="_blank" href="https://www.youtube.com/channel/UCK6a6LUyBleiUrKwQeNZN_Q">
+                        <img src="./img/social-icons/youtube.png" alt="Team 1257 YouTube" title="Team 1257 YouTube">
+                    </a>
+                    <a class="btn btn-circle" title="paralleluniverse@team1257.org" target="_blank" href="mailto:paralleluniverse@team1257.org">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                    </a>
+                    <a class="btn btn-circle" title="The Blue Alliance" target="_blank" href="https://thebluealliance.com/team/1257">
+                        <img class="blue-alliance-logo" src="./img/social-icons/theBlueAlliance.png" alt="Team 1257 Blue Alliance"
+                            title="Team 1257 Blue Alliance">
+                    </a>
+                    <a class="btn btn-circle" target="_blank" href="http://eepurl.com/daK-wD">
+                        <img src="./img/social-icons/newsletter-icon.png" alt="Team 1257 Newsletter" title="Team 1257 Newsletter">
+                    </a>
                 </div>
-            </section>
-            <!--Awards Section-->
-            <section id="awards" class="content-section picture-bg text-center">
-                <div class="awards-section">
-                    <div class="container">
-                        <div class="col-lg-10 col-lg-offset-1">
-                            <h2 class="awards-title">Our Awards</h2>
-                            <p>Awards and Honors. Take a look at what we've done, and how far we've come below!</p>
-                            <ul class="banners">
-                                <li><img src="img/FIRST_logo.png">2016<br>Mid-Atlantic Robotics Mount Olive Winner</li>
-                                <li><img src="img/FIRST_logo.png">2016<br>Mid-Atlantic Robotics District Championship Winner</li>
-                                <li><img src="img/FIRST_logo.png">2014<br>Mid-Atlantic Robotics Clifton<br>Winner</li>
-                            </ul>
-                            <table class="table awards-table">
-                                <thead>
-                                    <tr>
-                                        <th>Year</th>
-                                        <th>Event</th>
-                                        <th>Awards</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>2017</td>
-                                        <td><a href="http://www.thebluealliance.com/event/2017njbri" target="_blank">MAR District - Bridgewater-Raritan Event</a></td>
-                                        <td>Entrepreneurship Award sponsored by Kleiner Perkins Caufield and Byers</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2017</td>
-                                        <td><a href="http://www.thebluealliance.com/event/2017pahat" target="_blank">MAR District - Hatboro-Horsham Event</a></td>
-                                        <td>Excellence in Engineering Sponsored By Delphi</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2016</td>
-                                        <td><a href="http://www.thebluealliance.com/event/2016arc" target="_blank">FRC World Championship - Archimedes</a></td>
-                                        <td>Semifinalist</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2016</td>
-                                        <td><a href="http://www.thebluealliance.com/event/2016mrcmp" target="_blank">MAR District - Championships</a></td>
-                                        <td>Winner</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2016</td>
-                                        <td><a href="http://www.thebluealliance.com/event/2016mrcmp" target="_blank">MAR District - Bridgewater / Raritan Event</a></td>
-                                        <td>District Event Finalist</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2016</td>
-                                        <td><a href="http://www.thebluealliance.com/event/2016mrcmp" target="_blank">MAR District - Bridgewater / Raritan Event</a></td>
-                                        <td>1st Seed Alliance Captain</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2016</td>
-                                        <td><a href="http://www.thebluealliance.com/event/2016mrcmp" target="_blank">MAR District - Bridgewater / Raritan Event</a></td>
-                                        <td>Gracious Professionalism Award</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2016</td>
-                                        <td><a href="https://www.thebluealliance.com/event/2016njfla" target="_blank">MAR District - Mount Olive Event</a></td>
-                                        <td>District Event Winner and Alliance Captain</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2015</td>
-                                        <td><a href="https://www.thebluealliance.com/event/2015njfla" target="_blank">MAR District - Mount Olive Event</a></td>
-                                        <td>Industrial Safety Award sponsored by Underwriters Labratories</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2015</td>
-                                        <td><a href="https://www.thebluealliance.com/event/2015njnbr" target="_blank">MAR District - North Brunswick Event</a></td>
-                                        <td>District Event Finalist</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2015</td>
-                                        <td><a href="https://www.thebluealliance.com/event/2015njnbr" target="_blank">MAR District - North Brunswick Event</a></td>
-                                        <td>Industrial Safety Award sponsored by Underwriters Labratories</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2015</td>
-                                        <td><a href="https://www.thebluealliance.com/event/2015njnbr" target="_blank">MAR District - North Brunswick Event</a></td>
-                                        <td>Team Spirit Award sponsored by Chrysler</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2014</td>
-                                        <td><a href="https://www.thebluealliance.com/event/2014njcli" target="_blank">MAR District - Clifton Event</a></td>
-                                        <td>District Event Winner</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2013</td>
-                                        <td><a href="https://www.thebluealliance.com/event/2013njewn" target="_blank">TCNJ FIRST Robotics District Competition</a></td>
-                                        <td>Industrial Safety Award sponsored by Underwriters Labratories</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2010</td>
-                                        <td><a href="https://www.thebluealliance.com/event/2010nj" target="_blank">New Jersey Regional</a></td>
-                                        <td>Industrial Safety Award sponsored by Underwriters Labratories</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2005</td>
-                                        <td><a href="https://www.thebluealliance.com/event/2005md" target="_blank">Chesapeake Regional</a></td>
-                                        <td>Engineering Inspiration Award</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2005</td>
-                                        <td><a href="https://www.thebluealliance.com/event/2005ny" target="_blank">New York City Regional</a></td>
-                                        <td>Autodesk Visualization Award</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2005</td>
-                                        <td><a href="https://www.thebluealliance.com/event/2005ny" target="_blank">New York City Regional</a></td>
-                                        <td>Xerox Creativity Award</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2004</td>
-                                        <td><a href="https://www.thebluealliance.com/event/2004md" target="_blank">Chesapeake Regional</a></td>
-                                        <td>Rookie Inspiration Award</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2004</td>
-                                        <td><a href="https://www.thebluealliance.com/event/2004nj" target="_blank">New Jersey Regional</a></td>
-                                        <td>DaimlerChrysler Team Spirit Award</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--Sponsors Section-->
-            <section id="sponsors" class="content-section text-center">
-                <div class="sponsors">
-                    <div class="container">
-                        <div class="col-lg-10 col-lg-offset-1">
-                            <h2>Our Sponsors</h2>
-                            <section class="sponsor-section">
-                                <h3 class="sponsor-class">Premiere</h3>
-                                <a target="_blank" href="http://www.ucvts.tec.nj.us/"> <img class="sponsorimg large" title="Union County Vocational Technical Schools" alt="UCVTS" src="./img/sponsors/16_17/premiere/ucvts_white.svg" /> </a>
-                                <a target="_blank" href="http://www.utc.com/"> <img class="sponsorimg large" title="United Technologies Corporation" alt="UTC" src="./img/sponsors/16_17/premiere/utc.svg" /> </a>
-                                <a target="_blank" href="http://www.pica.army.mil/"> <img class="sponsorimg large" title="Picatinny Arsenal" alt="Picatinny Arsenal" src="./img/sponsors/16_17/premiere/picatinny.svg" /> </a>
-                                <a target="_blank" href="https://www.google.com/"> <img class="sponsorimg large" title="Google" alt="Google" src="./img/sponsors/16_17/premiere/google_white.svg" /> </a>
-                                <a target="_blank" href="http://www.te.com/usa-en/home.html"> <img class="sponsorimg large" title="TE Connectivity" alt="TE Connectivity" src="./img/sponsors/16_17/premiere/te_connectivity.svg" /> </a>
-                            </section>
-                            <section class="sponsor-section">
-                                <h3 class="sponsor-class">Title</h3>
-                                <a target="_blank" href="http://www.scholastic.com/"> <img class="sponsorimg large" title="Scholastic" alt="Scholastic" src="./img/sponsors/16_17/title/scholastic.svg" /> </a>
-                            </section>
-                            <section class="sponsor-section">
-                                <h3 class="sponsor-class">Gold</h3>
-                                <a target="_blank" href="http://www.merck.com/index.html"> <img class="sponsorimg medium" title="Merck" alt="Merck" src="./img/sponsors/16_17/gold/merck.svg" /> </a>
-                                <a target="_blank" href="http://formlabs.com/"> <img class="sponsorimg medium" title="Formlabs" alt="Formlabs" src="./img/sponsors/16_17/gold/formlabs.svg" /> </a>
-                            </section>
-                            <section class="sponsor-section">
-                                <h3 class="sponsor-class">Silver</h3>
-                                <a target="_blank" href="http://www.acquiredata.com/"> <img class="sponsorimg medium" title="Acquired Data Solutions" alt="Acquired Data Solutions" src="./img/sponsors/16_17/silver/ADS_Logo.png" /> </a> <br></br>
-                                <h4>The Tong Family</h4> </section>
-                            <section class="sponsor-section">
-                                <h3 class="sponsor-class">Bronze</h3>
-                                <a target="_blank" href="http://www.solidworks.com/"> <img class="sponsorimg small" title="DSS Solidworks" alt="DSS Solidworks" src="./img/sponsors/16_17/bronze/solidworks.svg" /> </a>
-                                <a target="_blank" href="http://n2mo.org"> <img class="sponsorimg small" title="Ocean-Monmouth Amateur Radio Club, Inc." alt="Ocean-Monmouth Amateur Radio Club, Inc." src="./img/sponsors/16_17/bronze/omarc.png" /> </a>
-                                <a target="_blank" href="http://www.2kprinting.com/">
-                                <img class="sponsorimg small" title="2K Printing & Promotions" alt="2K Printing & Promotions" src="./img/sponsors/15_16/silver/2k_printing.png" /> </a>
-                                <a target="_blank" href="http://www.thebikestand.com/"> <img class="sponsorimg small" title="The Bike Stand" alt="The Bike Stand" src="./img/sponsors/15_16/silver/TheBikeStand.png" /> </a> <br></br>
-                                <table class="family-sponsor-table table">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <h4>The Hagan Family</h4></td>
-                                            <td>
-                                                <h4>The Rafalowski Family</h4></td>
-                                            <td>
-                                                <h4>The Gerstein Family</h4></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h4>The Dave Family</h4></td>
-                                            <td>
-                                                <h4>The Maguire Family</h4></td>
-                                            <td>
-                                                <h4>The King Family</h4></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h4>The Almendral Family</h4></td>
-                                            <td>
-                                                <h4>The Breit Family</h4></td>
-                                            <td>
-                                                <h4>The Richman Family</h4></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h4>The Moskowitz Family</h4></td>
-                                            <td>
-                                                <h4>The Kilcullen Family</h4></td>
-                                            <td>
-                                                <h4>The Blechinger-Slocum Family</h4></td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <h4></h4></td>
-                                            <td>
-                                                <h4>The Saxon Family</h4></td>
-                                            <td>
-                                                <h4></h4></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Footer -->
-            <footer>
-                <div class="container text-center">
-                    <p>Copyright Team 1257 | Made with <span class="glyphicon glyphicon-heart" aria-hidden="true" style="color:#A94442"></span></p>
-                    <div class="social-media-links">
-                        <a class="btn btn-circle" target="_blank" href="https://www.facebook.com/FRC1257/"><img src="./img/social-icons/facebook-xxl.png" alt="Team 1257 Facebook" title="Team 1257 Facebook"></a>
-                        <a class="btn btn-circle" target="_blank" href="https://twitter.com/frc1257"><img src="./img/social-icons/twitter-512.png" alt="Team 1257 Twitter" title="Team 1257 Twitter"></a>
-                        <a class="btn btn-circle" target="_blank" href="https://www.youtube.com/channel/UCK6a6LUyBleiUrKwQeNZN_Q"><img src="./img/social-icons/youtube.png" alt="Team 1257 YouTube" title="Team 1257 YouTube"></a>
-                        <a class="btn btn-circle" title="paralleluniverse@team1257.org" target="_blank" href="mailto:paralleluniverse@team1257.org"><span class="glyphicon glyphicon-envelope"></span></a>
-                        <a class="btn btn-circle" title="The Blue Alliance" target="_blank" href="https://thebluealliance.com/team/1257"><img class="blue-alliance-logo" src="./img/social-icons/theBlueAlliance.png" alt="Team 1257 Blue Alliance" title="Team 1257 Blue Alliance"></a>
-                        <a class="btn btn-circle" target="_blank" href="http://eepurl.com/daK-wD"><img src="./img/social-icons/newsletter-icon.png" alt="Team 1257 Newsletter" title="Team 1257 Newsletter"></a>
-                    </div>
-                    <a href="http://www.firstinspires.org"><img class="first-logo" src="./img/frc/first.png"></a>
-                </div>
-            </footer>
-            <!-- jQuery -->
-            <script src="js/jquery.js"></script>
-            <!-- Bootstrap Core JavaScript -->
-            <script src="js/bootstrap.min.js"></script>
-            <!-- Plugin JavaScript -->
-            <script src="js/jquery.easing.min.js"></script>
-            <!-- Custom Theme JavaScript -->
-            <script src="js/grayscale.js"></script>
-            <!-- Custom Countdown JavaScript-->
-            <script src="js/countdown.js"></script>
-    </body>
+                <a href="http://www.firstinspires.org">
+                    <img class="first-logo" src="./img/frc/first.png">
+                </a>
+            </div>
+        </footer>
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Plugin JavaScript -->
+        <script src="js/jquery.easing.min.js"></script>
+        <!-- Custom Theme JavaScript -->
+        <script src="js/grayscale.js"></script>
+        <!-- Custom Countdown JavaScript-->
+        <script src="js/countdown.js"></script>
+</body>
 
 </html>

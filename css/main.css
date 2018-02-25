@@ -267,6 +267,7 @@ a:hover, a:focus {
     pointer-events: none;
     opacity: 0;
     border-radius: 3px !important;
+    min-width: 190px;
 }
 
 .dropdown.open .dropdown-menu {
@@ -692,6 +693,10 @@ a:hover, a:focus {
     padding-right: 0;
 }
 
+.first-rainbow .register-sign {
+    font-size: 0.25em;
+}
+
 .first-rainbow .first-link:first-child, .first-rainbow .first-link:last-child {
     padding-right: 15px;
 }
@@ -708,7 +713,7 @@ a:hover, a:focus {
 
 .first-rainbow .first-link a {
     display: inline-block;
-    margin-left: 28.28px;
+    margin-left: 14px;
     vertical-align: middle;
     color: white;
     line-height: 40px;
@@ -885,15 +890,23 @@ a:hover, a:focus {
 }
 
 .sponsorimg.medium {
-    width: 25%;
+    width: 28%;
 }
 
 .sponsorimg.small {
-    width: 14%;
+    width: 15%;
 }
 
 .sponsorimg.large {
-    width: 30%;
+    width: 40%;
+}
+
+.sponsorimg.image {
+    width: 25%;
+}
+
+#families {
+    width: 60%
 }
 
 .sponsors {
@@ -905,7 +918,7 @@ a:hover, a:focus {
 }
 
 .sponsor-section {
-    margin-bottom: 100px;
+    margin-bottom: 75px;
 }
 
 .sponsor-section:last-child {
@@ -1153,6 +1166,9 @@ footer p {
     .sponsorimg.small {
         width: 125px !important;
     }
+    .sponsorimg#families {
+        width: 60% !important;
+    }
     .banners {
         display: none;
     }
@@ -1179,6 +1195,13 @@ footer p {
     }
     .timeline>li>.timeline-panel:after {
         display: none;
+    }
+}
+
+/* Override of the !important style */
+@media only screen and (max-width: 450px) {
+    .sponsorimg#families {
+        width: 90% !important;
     }
 }
 
@@ -1306,9 +1329,4 @@ footer p {
         height: 30px;
         margin-left: -15px;
     }
-}
-
-.dropdown-menu {
-    min-width: 190px;
-    max-width: 190px;
 }
