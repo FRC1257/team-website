@@ -267,6 +267,7 @@ a:hover, a:focus {
     pointer-events: none;
     opacity: 0;
     border-radius: 3px !important;
+    min-width: 190px;
 }
 
 .dropdown.open .dropdown-menu {
@@ -1165,6 +1166,9 @@ footer p {
     .sponsorimg.small {
         width: 125px !important;
     }
+    .sponsorimg#families {
+        width: 60% !important;
+    }
     .banners {
         display: none;
     }
@@ -1191,6 +1195,13 @@ footer p {
     }
     .timeline>li>.timeline-panel:after {
         display: none;
+    }
+}
+
+/* Override of the !important style */
+@media only screen and (max-width: 450px) {
+    .sponsorimg#families {
+        width: 90% !important;
     }
 }
 
@@ -1318,9 +1329,4 @@ footer p {
         height: 30px;
         margin-left: -15px;
     }
-}
-
-.dropdown-menu {
-    min-width: 190px;
-    max-width: 190px;
 }
