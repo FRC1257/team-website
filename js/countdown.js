@@ -44,25 +44,25 @@ var events = [];
 var eventPosted = false;
 
 events.push(new event(
-    'Hatboro-Horsham Event',
-    new Date('Mar, 29, 2018, 8:00:00 GMT-400').getTime(),
-    new Date('Mar, 31, 2018 18:00:00 GMT-400').getTime(),
-    'https://www.thebluealliance.com/event/2018pahat'
+    'Mt. Olive District Event',
+    new Date('Mar, 8, 2018, 8:00:00 GMT-400').getTime(),
+    new Date('Mar, 10, 2018 18:00:00 GMT-400').getTime(),
+    'https://www.thebluealliance.com/event/2019njfla'
 ));
 
 
 events.push(new event(
-    'Bridgewater-Raritan Event',
-    new Date('Mar, 16, 2018, 8:00:00 GMT-400').getTime(),
-    new Date('Mar, 18, 2018, 18:00:00 GMT-400').getTime(),
-    'https://www.thebluealliance.com/event/2018njbri'
+    'Bridgewater-Raritan District Event',
+    new Date('Mar, 17, 2018, 8:00:00 GMT-400').getTime(),
+    new Date('Mar, 19, 2018, 18:00:00 GMT-400').getTime(),
+    'https://www.thebluealliance.com/event/2019njbri'
 ));
 
 events.push(new event(
-    'Mid-Atlantic District Championship',
-    new Date('Apr, 4, 2018, 8:00:00 GMT-400').getTime(),
-    new Date('Apr, 7, 2018 18:00:00 GMT-400').getTime(),
-    'https://www.thebluealliance.com/event/2018pahat'
+    '<i>FIRST</i> Mid-Atlantic District Championship',
+    new Date('Apr, 3, 2018, 8:00:00 GMT-400').getTime(),
+    new Date('Apr, 6, 2018 18:00:00 GMT-400').getTime(),
+    'https://www.thebluealliance.com/event/2019mrcmp'
 ));
 
 //Sort the events array based on start date
