@@ -45,23 +45,23 @@ var eventPosted = false;
 
 events.push(new event(
     'Mt. Olive District Event',
-    new Date('Mar, 8, 2018, 8:00:00 GMT-400').getTime(),
-    new Date('Mar, 10, 2018 18:00:00 GMT-400').getTime(),
+    new Date('Mar, 8, 2019, 8:00:00 GMT-400').getTime(),
+    new Date('Mar, 10, 2019 18:00:00 GMT-400').getTime(),
     'https://www.thebluealliance.com/event/2019njfla'
 ));
 
 
 events.push(new event(
     'Bridgewater-Raritan District Event',
-    new Date('Mar, 17, 2018, 8:00:00 GMT-400').getTime(),
-    new Date('Mar, 19, 2018, 18:00:00 GMT-400').getTime(),
+    new Date('Mar, 17, 2019, 8:00:00 GMT-400').getTime(),
+    new Date('Mar, 19, 2019, 18:00:00 GMT-400').getTime(),
     'https://www.thebluealliance.com/event/2019njbri'
 ));
 
 events.push(new event(
     '<i>FIRST</i> Mid-Atlantic District Championship',
-    new Date('Apr, 3, 2018, 8:00:00 GMT-400').getTime(),
-    new Date('Apr, 6, 2018 18:00:00 GMT-400').getTime(),
+    new Date('Apr, 3, 2019, 8:00:00 GMT-400').getTime(),
+    new Date('Apr, 6, 2019 18:00:00 GMT-400').getTime(),
     'https://www.thebluealliance.com/event/2019mrcmp'
 ));
 
